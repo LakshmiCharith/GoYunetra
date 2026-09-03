@@ -79,6 +79,7 @@ export const DestinationCard = ({ destination, onClick }) => {
         <img
           src={imageSrc}
           alt={destination.name}
+          referrerPolicy="no-referrer"
           onError={() => setImgError(true)}
           style={{ width: "100%", height: "100%", objectFit: "cover", display: "block", transition: "transform 0.5s ease" }}
           onMouseEnter={(e) => (e.currentTarget.style.transform = "scale(1.05)")}
