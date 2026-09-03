@@ -6,8 +6,7 @@ A modern, high-performance travel web application built with **React**, **Vite**
 
 ## ✨ Features Built
 
-1. **🎬 Landing Experience (Hero Video)**:
-   - Full-screen looping HD background video player with mute/unmute audio control.
+1. **🎬 Landing Experience **:
    - Interactive search bar, quick statistics counter, and animated call-to-action buttons.
 
 2. **🔍 Destination Explorer**:
