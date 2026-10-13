@@ -34,7 +34,7 @@ export const LocationBanner = ({ currentLocation, onLocationDetected, onSelectDe
           justifyContent: "space-between",
           flexWrap: "wrap",
           gap: "16px",
-          background: "linear-gradient(90deg, rgba(16, 185, 129, 0.08) 0%, rgba(20, 184, 166, 0.08) 100%)",
+          background: "linear-gradient(90deg, rgba(99, 102, 241, 0.08) 0%, rgba(20, 184, 166, 0.08) 100%)",
           border: "1px solid var(--border-subtle)"
         }}
       >
@@ -45,11 +45,11 @@ export const LocationBanner = ({ currentLocation, onLocationDetected, onSelectDe
               width: "48px",
               height: "48px",
               borderRadius: "50%",
-              background: "rgba(16, 185, 129, 0.15)",
+              background: "rgba(99, 102, 241, 0.15)",
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
-              color: "var(--accent-emerald)",
+              color: "var(--accent-primary)",
               flexShrink: 0
             }}
           >

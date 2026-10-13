@@ -18,7 +18,7 @@ export const Footer = () => {
   return (
     <footer style={{ position: "relative", background: "var(--bg-secondary)", borderTop: "none", marginTop: "0", padding: "0" }}>
       {/* Top soothing accent line */}
-      <div style={{ height: "2px", background: "linear-gradient(90deg, transparent, #10b981 30%, #34d399 70%, transparent 100%)" }} />
+      <div style={{ height: "2px", background: "linear-gradient(90deg, transparent, #6366f1 30%, #8b5cf6 70%, transparent 100%)" }} />
 
       <div className="container" style={{ position: "relative", zIndex: 1, padding: "56px 28px 28px" }}>
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: "40px", marginBottom: "48px" }}>
@@ -26,12 +26,12 @@ export const Footer = () => {
           {/* Brand */}
           <div>
             <div style={{ display: "flex", alignItems: "center", gap: "10px", marginBottom: "16px" }}>
-              <div style={{ width: "40px", height: "40px", borderRadius: "12px", background: "linear-gradient(135deg, #10b981, #059669)", display: "flex", alignItems: "center", justifyContent: "center", boxShadow: "0 4px 14px rgba(16, 185, 129, 0.3)" }}>
+              <div style={{ width: "40px", height: "40px", borderRadius: "12px", background: "linear-gradient(135deg, #6366f1, #4f46e5)", display: "flex", alignItems: "center", justifyContent: "center", boxShadow: "0 4px 14px rgba(99, 102, 241, 0.3)" }}>
                 <Compass size={20} color="#ffffff" />
               </div>
               <div>
                 <span style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: "1.3rem", fontWeight: "900", color: "var(--text-primary)", letterSpacing: "-0.03em" }}>
-                  Yatra<span style={{ background: "linear-gradient(90deg, #10b981, #34d399)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>AI</span>
+                  Yatra<span style={{ background: "linear-gradient(90deg, #6366f1, #8b5cf6)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>AI</span>
                 </span>
                 <span style={{ display: "block", fontFamily: "'JetBrains Mono', monospace", fontSize: "0.55rem", color: "var(--text-muted)", letterSpacing: "0.12em", textTransform: "uppercase" }}>
                   TRAVEL COMPANION
@@ -45,13 +45,13 @@ export const Footer = () => {
 
           {/* Features */}
           <div>
-            <h4 style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: "0.68rem", fontWeight: "700", color: "var(--accent-emerald)", letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: "18px" }}>
+            <h4 style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: "0.68rem", fontWeight: "700", color: "var(--accent-primary)", letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: "18px" }}>
               FEATURES //
             </h4>
             <ul style={{ listStyle: "none", display: "flex", flexDirection: "column", gap: "9px" }}>
               {features.map((f) => (
                 <li key={f} style={{ display: "flex", alignItems: "center", gap: "8px", fontFamily: "'DM Sans', sans-serif", fontSize: "0.82rem", color: "var(--text-secondary)" }}>
-                  <Check size={13} color="var(--accent-emerald)" />
+                  <Check size={13} color="var(--accent-primary)" />
                   {f}
                 </li>
               ))}
@@ -69,11 +69,11 @@ export const Footer = () => {
                   key={tech}
                   style={{
                     padding: "4px 12px", borderRadius: "9999px",
-                    background: "rgba(16, 185, 129, 0.08)",
+                    background: "rgba(99, 102, 241, 0.08)",
                     border: "1px solid var(--border-subtle)",
                     fontFamily: "'JetBrains Mono', monospace",
                     fontSize: "0.66rem", fontWeight: "700",
-                    color: "var(--accent-emerald)",
+                    color: "var(--accent-primary)",
                     letterSpacing: "0.04em"
                   }}
                 >

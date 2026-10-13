@@ -85,7 +85,7 @@ export const SettingsModal = ({ isOpen, onClose }) => {
         </button>
 
         <div style={{ display: "flex", alignItems: "center", gap: "10px", marginBottom: "8px" }}>
-          <Key size={22} color="var(--accent-emerald)" />
+          <Key size={22} color="var(--accent-primary)" />
           <h3 style={{ fontSize: "1.25rem", fontWeight: "700", color: "var(--text-primary)" }}>
             API Configuration & Keys
           </h3>
@@ -98,9 +98,9 @@ export const SettingsModal = ({ isOpen, onClose }) => {
         {savedSuccess && (
           <div
             style={{
-              background: "rgba(16, 185, 129, 0.15)",
-              border: "1px solid var(--accent-emerald)",
-              color: "var(--accent-emerald)",
+              background: "rgba(99, 102, 241, 0.15)",
+              border: "1px solid var(--accent-primary)",
+              color: "var(--accent-primary)",
               padding: "10px 14px",
               borderRadius: "var(--radius-sm)",
               fontSize: "0.85rem",
@@ -184,7 +184,7 @@ export const SettingsModal = ({ isOpen, onClose }) => {
           </div>
 
           <div style={{ display: "flex", alignItems: "center", gap: "6px", fontSize: "0.75rem", color: "var(--text-muted)", marginTop: "4px" }}>
-            <ShieldCheck size={14} color="var(--accent-emerald)" />
+            <ShieldCheck size={14} color="var(--accent-primary)" />
             <span>Built-in mock fallbacks ensure full functionality even without keys.</span>
           </div>
 

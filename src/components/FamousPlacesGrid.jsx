@@ -70,11 +70,11 @@ export const FamousPlacesGrid = ({ places, destinationName }) => {
               <div>
                 {/* Meta Badges */}
                 <div style={{ display: "flex", gap: "12px", marginBottom: "14px", flexWrap: "wrap" }}>
-                  <div style={{ display: "flex", alignItems: "center", gap: "4px", fontSize: "0.75rem", color: "var(--accent-emerald)", background: "rgba(16,185,129,0.1)", padding: "4px 10px", borderRadius: "var(--radius-full)" }}>
+                  <div style={{ display: "flex", alignItems: "center", gap: "4px", fontSize: "0.75rem", color: "var(--accent-primary)", background: "rgba(99, 102, 241,0.1)", padding: "4px 10px", borderRadius: "var(--radius-full)" }}>
                     <Clock size={13} />
                     <span>{place.duration}</span>
                   </div>
-                  <div style={{ display: "flex", alignItems: "center", gap: "4px", fontSize: "0.75rem", color: "var(--accent-emerald)", background: "rgba(16,185,129,0.1)", padding: "4px 10px", borderRadius: "var(--radius-full)" }}>
+                  <div style={{ display: "flex", alignItems: "center", gap: "4px", fontSize: "0.75rem", color: "var(--accent-primary)", background: "rgba(99, 102, 241,0.1)", padding: "4px 10px", borderRadius: "var(--radius-full)" }}>
                     <Tag size={13} />
                     <span>{place.fee}</span>
                   </div>

@@ -166,7 +166,7 @@ export const DestinationDetailModal = ({ destination, onClose }) => {
               <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "16px" }}>
                 <div className="glass-card" style={{ padding: "16px" }}>
                   <div style={{ fontSize: "0.8rem", color: "var(--text-muted)", marginBottom: "4px" }}>Average Daily Budget</div>
-                  <div style={{ fontSize: "1.2rem", fontWeight: "700", color: "var(--accent-emerald)" }}>{destination.avgDailyBudget}</div>
+                  <div style={{ fontSize: "1.2rem", fontWeight: "700", color: "var(--accent-primary)" }}>{destination.avgDailyBudget}</div>
                 </div>
 
                 <div className="glass-card" style={{ padding: "16px" }}>
@@ -176,7 +176,7 @@ export const DestinationDetailModal = ({ destination, onClose }) => {
 
                 <div className="glass-card" style={{ padding: "16px" }}>
                   <div style={{ fontSize: "0.8rem", color: "var(--text-muted)", marginBottom: "4px" }}>Safety Score</div>
-                  <div style={{ fontSize: "1.2rem", fontWeight: "700", color: "var(--accent-emerald)" }}>{destination.safetyScore} / 10</div>
+                  <div style={{ fontSize: "1.2rem", fontWeight: "700", color: "var(--accent-primary)" }}>{destination.safetyScore} / 10</div>
                 </div>
               </div>
 

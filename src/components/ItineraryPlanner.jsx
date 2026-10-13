@@ -159,7 +159,7 @@ export const ItineraryPlanner = ({ destinationName = "Destination" }) => {
             </div>
 
             <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
-              <div style={{ background: "rgba(16, 185, 129, 0.15)", color: "var(--accent-emerald)", padding: "6px 14px", borderRadius: "var(--radius-full)", fontSize: "0.85rem", fontWeight: "700" }}>
+              <div style={{ background: "rgba(99, 102, 241, 0.15)", color: "var(--accent-primary)", padding: "6px 14px", borderRadius: "var(--radius-full)", fontSize: "0.85rem", fontWeight: "700" }}>
                 Estimated Cost: {itinerary.totalEstimatedCost}
               </div>
               <button
@@ -204,12 +204,12 @@ export const ItineraryPlanner = ({ destinationName = "Destination" }) => {
                   <div style={{ display: "flex", gap: "10px", alignItems: "flex-start" }}>
                     <button
                       onClick={() => toggleCheck(`d${dayObj.day}-m`)}
-                      style={{ background: "none", border: "none", cursor: "pointer", color: checkedItems[`d${dayObj.day}-m`] ? "var(--accent-emerald)" : "var(--text-muted)" }}
+                      style={{ background: "none", border: "none", cursor: "pointer", color: checkedItems[`d${dayObj.day}-m`] ? "var(--accent-primary)" : "var(--text-muted)" }}
                     >
                       <CheckSquare size={18} />
                     </button>
                     <div>
-                      <strong style={{ color: "var(--accent-emerald)" }}>Morning: </strong>
+                      <strong style={{ color: "var(--accent-primary)" }}>Morning: </strong>
                       <span style={{ textDecoration: checkedItems[`d${dayObj.day}-m`] ? "line-through" : "none" }}>{dayObj.morning}</span>
                     </div>
                   </div>
@@ -217,7 +217,7 @@ export const ItineraryPlanner = ({ destinationName = "Destination" }) => {
                   <div style={{ display: "flex", gap: "10px", alignItems: "flex-start" }}>
                     <button
                       onClick={() => toggleCheck(`d${dayObj.day}-a`)}
-                      style={{ background: "none", border: "none", cursor: "pointer", color: checkedItems[`d${dayObj.day}-a`] ? "var(--accent-emerald)" : "var(--text-muted)" }}
+                      style={{ background: "none", border: "none", cursor: "pointer", color: checkedItems[`d${dayObj.day}-a`] ? "var(--accent-primary)" : "var(--text-muted)" }}
                     >
                       <CheckSquare size={18} />
                     </button>
@@ -230,7 +230,7 @@ export const ItineraryPlanner = ({ destinationName = "Destination" }) => {
                   <div style={{ display: "flex", gap: "10px", alignItems: "flex-start" }}>
                     <button
                       onClick={() => toggleCheck(`d${dayObj.day}-e`)}
-                      style={{ background: "none", border: "none", cursor: "pointer", color: checkedItems[`d${dayObj.day}-e`] ? "var(--accent-emerald)" : "var(--text-muted)" }}
+                      style={{ background: "none", border: "none", cursor: "pointer", color: checkedItems[`d${dayObj.day}-e`] ? "var(--accent-primary)" : "var(--text-muted)" }}
                     >
                       <CheckSquare size={18} />
                     </button>

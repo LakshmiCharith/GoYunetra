@@ -35,13 +35,13 @@ export const DestinationCard = ({ destination, onClick }) => {
   // Nature-inspired calming category accents
   const accentMap = {
     "Spiritual & Heritage": "#f59e0b",
-    "Mountain & Hill Stations": "#10b981",
+    "Mountain & Hill Stations": "#6366f1",
     "Beaches & Coastal": "#0ea5e9",
-    "Nature & Adventure": "#34d399",
+    "Nature & Adventure": "#8b5cf6",
     "Romantic": "#fb7185",
-    "Metropolitan": "#14b8a6"
+    "Metropolitan": "#ec4899"
   };
-  const cardAccent = accentMap[destination.category] || "#10b981";
+  const cardAccent = accentMap[destination.category] || "#6366f1";
 
   return (
     <div
@@ -85,19 +85,19 @@ export const DestinationCard = ({ destination, onClick }) => {
           onMouseEnter={(e) => (e.currentTarget.style.transform = "scale(1.05)")}
           onMouseLeave={(e) => (e.currentTarget.style.transform = "scale(1)")}
         />
-        <div style={{ position: "absolute", inset: 0, background: `linear-gradient(to top, rgba(11,19,17,0.85) 0%, rgba(11,19,17,0.1) 55%, transparent 100%)` }} />
+        <div style={{ position: "absolute", inset: 0, background: `linear-gradient(to top, rgba(9,13,22,0.88) 0%, rgba(9,13,22,0.1) 55%, transparent 100%)` }} />
 
         {/* Category tag */}
         <div style={{
           position: "absolute", top: "12px", left: "12px",
-          background: "rgba(11, 19, 17, 0.85)",
+          background: "rgba(9, 13, 22, 0.88)",
           backdropFilter: "blur(10px)",
           border: `1px solid ${cardAccent}66`,
           padding: "4px 10px", borderRadius: "9999px",
           display: "flex", alignItems: "center", gap: "6px"
         }}>
           <span style={{ width: "6px", height: "6px", borderRadius: "50%", background: cardAccent }} />
-          <span style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: "0.62rem", fontWeight: "700", color: "#f0fdf4", letterSpacing: "0.05em", textTransform: "uppercase" }}>
+          <span style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: "0.62rem", fontWeight: "700", color: "#ffffff", letterSpacing: "0.05em", textTransform: "uppercase" }}>
             {destination.category}
           </span>
         </div>
@@ -105,7 +105,7 @@ export const DestinationCard = ({ destination, onClick }) => {
         {/* Star rating */}
         <div style={{
           position: "absolute", top: "12px", right: "12px",
-          background: "rgba(11, 19, 17, 0.85)", backdropFilter: "blur(10px)",
+          background: "rgba(9, 13, 22, 0.88)", backdropFilter: "blur(10px)",
           border: "1px solid rgba(245,158,11,0.4)",
           padding: "4px 10px", borderRadius: "9999px",
           display: "flex", alignItems: "center", gap: "4px",
@@ -120,11 +120,11 @@ export const DestinationCard = ({ destination, onClick }) => {
         {weather && (
           <div style={{
             position: "absolute", bottom: "10px", right: "12px",
-            background: "rgba(11, 19, 17, 0.85)", backdropFilter: "blur(10px)",
+            background: "rgba(9, 13, 22, 0.88)", backdropFilter: "blur(10px)",
             border: "1px solid rgba(255,255,255,0.15)",
             padding: "3px 10px", borderRadius: "9999px",
             display: "flex", alignItems: "center", gap: "5px",
-            fontSize: "0.73rem", fontWeight: "600", color: "#f0fdf4",
+            fontSize: "0.73rem", fontWeight: "600", color: "#ffffff",
             fontFamily: "'DM Sans', sans-serif"
           }}>
             <Thermometer size={11} color="#fbbf24" />
@@ -156,7 +156,7 @@ export const DestinationCard = ({ destination, onClick }) => {
             <div style={{ display: "flex", alignItems: "center", gap: "4px", fontFamily: "'JetBrains Mono', monospace", fontSize: "0.66rem", color: "var(--text-muted)", letterSpacing: "0.04em" }}>
               <Calendar size={11} /> {destination.bestMonths}
             </div>
-            <span style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: "0.76rem", fontWeight: "700", color: "var(--accent-emerald)" }}>
+            <span style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: "0.76rem", fontWeight: "700", color: "var(--accent-primary)" }}>
               {destination.priceLevel}
             </span>
           </div>
@@ -165,7 +165,7 @@ export const DestinationCard = ({ destination, onClick }) => {
             style={{
               width: "100%", padding: "10px",
               borderRadius: "10px",
-              background: "rgba(16, 185, 129, 0.08)",
+              background: "rgba(99, 102, 241, 0.08)",
               border: "1px solid var(--border-subtle)",
               color: "var(--text-primary)",
               fontFamily: "'DM Sans', sans-serif", fontWeight: "700", fontSize: "0.83rem",
@@ -176,10 +176,10 @@ export const DestinationCard = ({ destination, onClick }) => {
               e.currentTarget.style.background = "var(--gradient-primary)";
               e.currentTarget.style.borderColor = "transparent";
               e.currentTarget.style.color = "#ffffff";
-              e.currentTarget.style.boxShadow = "0 4px 14px rgba(16, 185, 129, 0.35)";
+              e.currentTarget.style.boxShadow = "0 4px 14px rgba(99, 102, 241, 0.35)";
             }}
             onMouseLeave={(e) => {
-              e.currentTarget.style.background = "rgba(16, 185, 129, 0.08)";
+              e.currentTarget.style.background = "rgba(99, 102, 241, 0.08)";
               e.currentTarget.style.borderColor = "var(--border-subtle)";
               e.currentTarget.style.color = "var(--text-primary)";
               e.currentTarget.style.boxShadow = "none";

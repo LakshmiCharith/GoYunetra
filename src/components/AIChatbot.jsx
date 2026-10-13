@@ -91,7 +91,7 @@ export const AIChatbot = ({ destinationName = "World & India Destinations" }) =>
       {/* Header */}
       <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", paddingBottom: "14px", borderBottom: "1px solid var(--border-subtle)" }}>
         <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
-          <div style={{ width: "38px", height: "38px", borderRadius: "12px", background: "var(--gradient-primary)", display: "flex", alignItems: "center", justifyContent: "center", boxShadow: "0 4px 12px rgba(16, 185, 129, 0.3)" }}>
+          <div style={{ width: "38px", height: "38px", borderRadius: "12px", background: "var(--gradient-primary)", display: "flex", alignItems: "center", justifyContent: "center", boxShadow: "0 4px 12px rgba(99, 102, 241, 0.3)" }}>
             <Sparkles size={20} color="#ffffff" />
           </div>
           <div>
@@ -141,8 +141,8 @@ export const AIChatbot = ({ destinationName = "World & India Destinations" }) =>
             }}
           >
             {msg.sender === "ai" && (
-              <div style={{ width: "30px", height: "30px", borderRadius: "50%", background: "rgba(16, 185, 129, 0.15)", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
-                <Bot size={16} color="var(--accent-emerald)" />
+              <div style={{ width: "30px", height: "30px", borderRadius: "50%", background: "rgba(99, 102, 241, 0.15)", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
+                <Bot size={16} color="var(--accent-primary)" />
               </div>
             )}
             <div
@@ -168,7 +168,7 @@ export const AIChatbot = ({ destinationName = "World & India Destinations" }) =>
           </div>
         ))}
         {loading && (
-          <div style={{ display: "flex", alignItems: "center", gap: "8px", color: "var(--accent-emerald)", fontSize: "0.82rem", fontWeight: "600", paddingLeft: "40px" }}>
+          <div style={{ display: "flex", alignItems: "center", gap: "8px", color: "var(--accent-primary)", fontSize: "0.82rem", fontWeight: "600", paddingLeft: "40px" }}>
             <RefreshCw size={15} className="animate-spin" />
             <span>YatraAI is composing smart travel advice...</span>
           </div>

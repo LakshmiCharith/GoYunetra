@@ -142,7 +142,7 @@ export function App() {
                 alignItems: "center",
                 justifyContent: "center",
                 cursor: "pointer",
-                boxShadow: "0 4px 16px rgba(16,185,129,0.4)"
+                boxShadow: "0 4px 16px rgba(99, 102, 241,0.4)"
               }}
             >
               <X size={17} />
@@ -171,7 +171,7 @@ export function App() {
             display: "flex",
             alignItems: "center",
             gap: "8px",
-            boxShadow: "0 6px 24px rgba(0,0,0,0.35), 0 0 20px rgba(16,185,129,0.4)",
+            boxShadow: "0 6px 24px rgba(0,0,0,0.35), 0 0 20px rgba(99, 102, 241,0.4)",
             cursor: "pointer",
             fontFamily: "'DM Sans', sans-serif",
             fontWeight: "800",
@@ -180,11 +180,11 @@ export function App() {
           }}
           onMouseEnter={(e) => {
             e.currentTarget.style.transform = "translateY(-3px)";
-            e.currentTarget.style.boxShadow = "0 8px 28px rgba(0,0,0,0.4), 0 0 28px rgba(16,185,129,0.55)";
+            e.currentTarget.style.boxShadow = "0 8px 28px rgba(0,0,0,0.4), 0 0 28px rgba(99, 102, 241,0.55)";
           }}
           onMouseLeave={(e) => {
             e.currentTarget.style.transform = "translateY(0)";
-            e.currentTarget.style.boxShadow = "0 6px 24px rgba(0,0,0,0.35), 0 0 20px rgba(16,185,129,0.4)";
+            e.currentTarget.style.boxShadow = "0 6px 24px rgba(0,0,0,0.35), 0 0 20px rgba(99, 102, 241,0.4)";
           }}
         >
           <Sparkles size={18} color="#ffffff" />

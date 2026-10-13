@@ -34,7 +34,7 @@ export const Hero = ({ onSearch, onExploreClick, onOpenAI }) => {
       {/* ── SOOTHING GRADIENT OVERLAYS (NO EYE STRAIN) ── */}
       <div style={{ position: "absolute", inset: 0, background: "var(--gradient-dark-overlay)", zIndex: 1 }} />
       {/* Soft forest emerald subtle glow */}
-      <div style={{ position: "absolute", inset: 0, background: "radial-gradient(ellipse at 50% 40%, rgba(16,185,129,0.12) 0%, transparent 65%)", zIndex: 1 }} />
+      <div style={{ position: "absolute", inset: 0, background: "radial-gradient(ellipse at 50% 40%, rgba(99, 102, 241,0.12) 0%, transparent 65%)", zIndex: 1 }} />
 
       {/* ── HERO CONTENT ── */}
       <div style={{ position: "relative", zIndex: 2, width: "100%", maxWidth: "1280px", margin: "0 auto", padding: "140px 28px 120px", textAlign: "center" }}>
@@ -42,7 +42,7 @@ export const Hero = ({ onSearch, onExploreClick, onOpenAI }) => {
         {/* Main headline */}
         <h1 style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: "clamp(2.8rem, 6.5vw, 5.2rem)", fontWeight: "900", lineHeight: 1.08, color: "var(--text-primary)", marginBottom: "20px", letterSpacing: "-0.04em" }}>
           Discover 30+ Extraordinary<br />
-          <span style={{ background: "linear-gradient(90deg, #10b981 0%, #34d399 60%, #fbbf24 100%)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", backgroundClip: "text" }}>
+          <span style={{ background: "linear-gradient(90deg, #6366f1 0%, #8b5cf6 40%, #ec4899 75%, #fbbf24 100%)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", backgroundClip: "text" }}>
             Wonders Across India &amp; the World
           </span>
         </h1>
@@ -64,10 +64,10 @@ export const Hero = ({ onSearch, onExploreClick, onOpenAI }) => {
             boxShadow: "var(--shadow-md)",
             transition: "border-color 0.2s ease, box-shadow 0.2s ease"
           }}
-            onFocus={(e) => { e.currentTarget.style.borderColor = "var(--accent-emerald)"; e.currentTarget.style.boxShadow = "0 0 24px rgba(16, 185, 129, 0.25)"; }}
+            onFocus={(e) => { e.currentTarget.style.borderColor = "var(--accent-primary)"; e.currentTarget.style.boxShadow = "0 0 24px rgba(99, 102, 241, 0.25)"; }}
             onBlur={(e) => { e.currentTarget.style.borderColor = "var(--border-subtle)"; e.currentTarget.style.boxShadow = "var(--shadow-md)"; }}
           >
-            <Search size={20} color="var(--accent-emerald)" style={{ flexShrink: 0, marginRight: "12px" }} />
+            <Search size={20} color="var(--accent-primary)" style={{ flexShrink: 0, marginRight: "12px" }} />
             <input
               type="text"
               placeholder="Search Jaipur, Taj Mahal, Kerala, Swiss Alps, Paris..."
@@ -81,7 +81,7 @@ export const Hero = ({ onSearch, onExploreClick, onOpenAI }) => {
               fontFamily: "'DM Sans', sans-serif", fontWeight: "700", fontSize: "0.88rem",
               padding: "12px 22px", borderRadius: "9999px", border: "none", cursor: "pointer",
               display: "flex", alignItems: "center", gap: "6px", whiteSpace: "nowrap",
-              boxShadow: "0 2px 10px rgba(16, 185, 129, 0.35)",
+              boxShadow: "0 2px 10px rgba(99, 102, 241, 0.35)",
               transition: "transform 0.2s ease"
             }}
             onMouseEnter={(e) => (e.currentTarget.style.transform = "scale(1.02)")}
@@ -101,14 +101,14 @@ export const Hero = ({ onSearch, onExploreClick, onOpenAI }) => {
               onClick={() => handleTagClick(tag)}
               style={{
                 padding: "5px 14px", borderRadius: "9999px",
-                background: "rgba(16, 185, 129, 0.08)",
+                background: "rgba(99, 102, 241, 0.08)",
                 border: "1px solid var(--border-subtle)",
                 color: "var(--text-secondary)",
                 fontFamily: "'DM Sans', sans-serif", fontSize: "0.78rem", fontWeight: "600",
                 cursor: "pointer", transition: "all 0.18s ease"
               }}
-              onMouseEnter={(e) => { e.currentTarget.style.background = "rgba(16, 185, 129, 0.18)"; e.currentTarget.style.borderColor = "var(--accent-emerald)"; e.currentTarget.style.color = "var(--accent-emerald)"; }}
-              onMouseLeave={(e) => { e.currentTarget.style.background = "rgba(16, 185, 129, 0.08)"; e.currentTarget.style.borderColor = "var(--border-subtle)"; e.currentTarget.style.color = "var(--text-secondary)"; }}
+              onMouseEnter={(e) => { e.currentTarget.style.background = "rgba(99, 102, 241, 0.18)"; e.currentTarget.style.borderColor = "var(--accent-primary)"; e.currentTarget.style.color = "var(--accent-primary)"; }}
+              onMouseLeave={(e) => { e.currentTarget.style.background = "rgba(99, 102, 241, 0.08)"; e.currentTarget.style.borderColor = "var(--border-subtle)"; e.currentTarget.style.color = "var(--text-secondary)"; }}
             >
               {tag}
             </button>
@@ -125,20 +125,20 @@ export const Hero = ({ onSearch, onExploreClick, onOpenAI }) => {
               fontFamily: "'DM Sans', sans-serif", fontWeight: "800", fontSize: "0.95rem",
               padding: "15px 32px", borderRadius: "9999px", border: "none", cursor: "pointer",
               display: "flex", alignItems: "center", gap: "8px",
-              boxShadow: "0 4px 20px rgba(16, 185, 129, 0.4)",
+              boxShadow: "0 4px 20px rgba(99, 102, 241, 0.4)",
               transition: "all 0.22s ease"
             }}
-            onMouseEnter={(e) => { e.currentTarget.style.transform = "translateY(-2px)"; e.currentTarget.style.boxShadow = "0 8px 28px rgba(16, 185, 129, 0.55)"; }}
-            onMouseLeave={(e) => { e.currentTarget.style.transform = "translateY(0)"; e.currentTarget.style.boxShadow = "0 4px 20px rgba(16, 185, 129, 0.4)"; }}
+            onMouseEnter={(e) => { e.currentTarget.style.transform = "translateY(-2px)"; e.currentTarget.style.boxShadow = "0 8px 28px rgba(99, 102, 241, 0.55)"; }}
+            onMouseLeave={(e) => { e.currentTarget.style.transform = "translateY(0)"; e.currentTarget.style.boxShadow = "0 4px 20px rgba(99, 102, 241, 0.4)"; }}
           >
             <Globe size={18} /> Explore 30+ Destinations
           </button>
           <button
             onClick={onOpenAI}
             style={{
-              background: "rgba(16, 185, 129, 0.1)",
+              background: "rgba(99, 102, 241, 0.1)",
               backdropFilter: "blur(14px)",
-              color: "var(--accent-emerald)",
+              color: "var(--accent-primary)",
               fontFamily: "'DM Sans', sans-serif", fontWeight: "700", fontSize: "0.95rem",
               padding: "15px 32px", borderRadius: "9999px",
               border: "1.5px solid var(--border-bright)",
@@ -146,10 +146,10 @@ export const Hero = ({ onSearch, onExploreClick, onOpenAI }) => {
               display: "flex", alignItems: "center", gap: "8px",
               transition: "all 0.22s ease"
             }}
-            onMouseEnter={(e) => { e.currentTarget.style.background = "rgba(16, 185, 129, 0.2)"; e.currentTarget.style.borderColor = "var(--accent-emerald)"; }}
-            onMouseLeave={(e) => { e.currentTarget.style.background = "rgba(16, 185, 129, 0.1)"; e.currentTarget.style.borderColor = "var(--border-bright)"; }}
+            onMouseEnter={(e) => { e.currentTarget.style.background = "rgba(99, 102, 241, 0.2)"; e.currentTarget.style.borderColor = "var(--accent-primary)"; }}
+            onMouseLeave={(e) => { e.currentTarget.style.background = "rgba(99, 102, 241, 0.1)"; e.currentTarget.style.borderColor = "var(--border-bright)"; }}
           >
-            <Sparkles size={18} color="var(--accent-emerald)" /> Ask YatraAI
+            <Sparkles size={18} color="var(--accent-primary)" /> Ask YatraAI
           </button>
         </div>
 
@@ -157,8 +157,8 @@ export const Hero = ({ onSearch, onExploreClick, onOpenAI }) => {
         <div style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: "14px", maxWidth: "760px", margin: "0 auto" }}>
           {[
             { number: "15+", label: "Indian Wonders", accent: "#f59e0b" },
-            { number: "15+", label: "Global Icons", accent: "#10b981" },
-            { number: "30+", label: "Destinations", accent: "#34d399" },
+            { number: "15+", label: "Global Icons", accent: "#6366f1" },
+            { number: "30+", label: "Destinations", accent: "#8b5cf6" },
             { number: "24/7", label: "AI Answers", accent: "#14b8a6" }
           ].map((stat) => (
             <div
@@ -196,7 +196,7 @@ export const Hero = ({ onSearch, onExploreClick, onOpenAI }) => {
         borderTop: "1px solid var(--border-subtle)"
       }}>
         <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
-          <Film size={14} color="var(--accent-emerald)" />
+          <Film size={14} color="var(--accent-primary)" />
           <span style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: "0.67rem", color: "var(--text-secondary)", letterSpacing: "0.12em", fontWeight: "700" }}>
             ATMOSPHERE //
           </span>
@@ -209,12 +209,12 @@ export const Hero = ({ onSearch, onExploreClick, onOpenAI }) => {
                   padding: "5px 16px", borderRadius: "9999px",
                   background: activeVideoIndex === idx
                     ? "var(--gradient-primary)"
-                    : "rgba(16, 185, 129, 0.08)",
+                    : "rgba(99, 102, 241, 0.08)",
                   border: activeVideoIndex === idx ? "none" : "1px solid var(--border-subtle)",
                   color: activeVideoIndex === idx ? "#ffffff" : "var(--text-secondary)",
                   fontFamily: "'DM Sans', sans-serif", fontSize: "0.76rem", fontWeight: "700",
                   cursor: "pointer", transition: "all 0.2s ease",
-                  boxShadow: activeVideoIndex === idx ? "0 2px 10px rgba(16, 185, 129, 0.35)" : "none"
+                  boxShadow: activeVideoIndex === idx ? "0 2px 10px rgba(99, 102, 241, 0.35)" : "none"
                 }}
               >
                 {ch.label}
@@ -226,7 +226,7 @@ export const Hero = ({ onSearch, onExploreClick, onOpenAI }) => {
           onClick={() => setIsMuted(!isMuted)}
           style={{
             width: "34px", height: "34px", borderRadius: "8px",
-            background: "rgba(16, 185, 129, 0.08)",
+            background: "rgba(99, 102, 241, 0.08)",
             border: "1px solid var(--border-subtle)",
             color: "var(--text-secondary)",
             display: "flex", alignItems: "center", justifyContent: "center",

@@ -50,7 +50,7 @@ export const DestinationExplorer = ({ onSelectDestination, initialSearch = "" })
   return (
     <section id="explorer" style={{ padding: "80px 0", position: "relative" }}>
       {/* Soothing top divider */}
-      <div style={{ height: "1px", background: "linear-gradient(to right, transparent, rgba(16,185,129,0.35), rgba(52,211,153,0.25), transparent)", marginBottom: "80px" }} />
+      <div style={{ height: "1px", background: "linear-gradient(to right, transparent, rgba(99, 102, 241,0.35), rgba(52,211,153,0.25), transparent)", marginBottom: "80px" }} />
 
       <div className="container">
         {/* ── SECTION HEADER ── */}
@@ -68,7 +68,7 @@ export const DestinationExplorer = ({ onSelectDestination, initialSearch = "" })
             marginBottom: "14px"
           }}>
             Explore Exceptional<br />
-            <span style={{ background: "linear-gradient(90deg, #10b981, #34d399)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>
+            <span style={{ background: "linear-gradient(90deg, #6366f1, #8b5cf6)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>
               Destinations Across Continents
             </span>
           </h2>
@@ -90,12 +90,12 @@ export const DestinationExplorer = ({ onSelectDestination, initialSearch = "" })
           boxShadow: "var(--shadow-sm)"
         }}>
           {/* Subtle top accent */}
-          <div style={{ position: "absolute", top: 0, left: 0, right: 0, height: "2px", background: "linear-gradient(90deg, #10b981, #34d399, #f59e0b)" }} />
+          <div style={{ position: "absolute", top: 0, left: 0, right: 0, height: "2px", background: "linear-gradient(90deg, #6366f1, #8b5cf6, #f59e0b)" }} />
 
           {/* Search + Sort row */}
           <div style={{ display: "flex", gap: "14px", flexWrap: "wrap", alignItems: "center" }}>
             <div style={{ flex: 1, minWidth: "260px", position: "relative" }}>
-              <Search size={16} color="var(--accent-emerald)" style={{ position: "absolute", left: "16px", top: "50%", transform: "translateY(-50%)" }} />
+              <Search size={16} color="var(--accent-primary)" style={{ position: "absolute", left: "16px", top: "50%", transform: "translateY(-50%)" }} />
               <input
                 type="text"
                 placeholder="Search by city, country, or interest..."
@@ -113,12 +113,12 @@ export const DestinationExplorer = ({ onSelectDestination, initialSearch = "" })
                   outline: "none",
                   transition: "border-color 0.2s ease, box-shadow 0.2s ease"
                 }}
-                onFocus={(e) => { e.currentTarget.style.borderColor = "var(--accent-emerald)"; e.currentTarget.style.boxShadow = "0 0 16px rgba(16, 185, 129, 0.2)"; }}
+                onFocus={(e) => { e.currentTarget.style.borderColor = "var(--accent-primary)"; e.currentTarget.style.boxShadow = "0 0 16px rgba(99, 102, 241, 0.2)"; }}
                 onBlur={(e) => { e.currentTarget.style.borderColor = "var(--border-subtle)"; e.currentTarget.style.boxShadow = "none"; }}
               />
             </div>
             <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
-              <SlidersHorizontal size={15} color="var(--accent-emerald)" />
+              <SlidersHorizontal size={15} color="var(--accent-primary)" />
               <select
                 value={sortBy}
                 onChange={(e) => setSortBy(e.target.value)}
@@ -151,10 +151,10 @@ export const DestinationExplorer = ({ onSelectDestination, initialSearch = "" })
                     onClick={() => setSelectedCategory(cat.id)}
                     style={{
                       ...pillBase,
-                      background: active ? "var(--gradient-primary)" : "rgba(16, 185, 129, 0.07)",
+                      background: active ? "var(--gradient-primary)" : "rgba(99, 102, 241, 0.07)",
                       borderColor: active ? "transparent" : "var(--border-subtle)",
                       color: active ? "#ffffff" : "var(--text-secondary)",
-                      boxShadow: active ? "0 2px 10px rgba(16, 185, 129, 0.35)" : "none"
+                      boxShadow: active ? "0 2px 10px rgba(99, 102, 241, 0.35)" : "none"
                     }}
                   >
                     {cat.label}
@@ -178,9 +178,9 @@ export const DestinationExplorer = ({ onSelectDestination, initialSearch = "" })
                     onClick={() => setSelectedContinent(cont)}
                     style={{
                       ...pillBase,
-                      background: active ? "rgba(16, 185, 129, 0.16)" : "transparent",
-                      borderColor: active ? "var(--accent-emerald)" : "var(--border-subtle)",
-                      color: active ? "var(--accent-emerald)" : "var(--text-muted)"
+                      background: active ? "rgba(99, 102, 241, 0.16)" : "transparent",
+                      borderColor: active ? "var(--accent-primary)" : "var(--border-subtle)",
+                      color: active ? "var(--accent-primary)" : "var(--text-muted)"
                     }}
                   >
                     {cont === "all" ? "All Regions" : cont}
@@ -193,7 +193,7 @@ export const DestinationExplorer = ({ onSelectDestination, initialSearch = "" })
           {/* Results count */}
           <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
             <span style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: "0.68rem", color: "var(--text-muted)", letterSpacing: "0.06em" }}>
-              SHOWING // <span style={{ color: "var(--accent-emerald)", fontWeight: "700" }}>{filteredDestinations.length}</span> DESTINATIONS
+              SHOWING // <span style={{ color: "var(--accent-primary)", fontWeight: "700" }}>{filteredDestinations.length}</span> DESTINATIONS
             </span>
             {(searchQuery || selectedCategory !== "all" || selectedContinent !== "all") && (
               <button
@@ -228,7 +228,7 @@ export const DestinationExplorer = ({ onSelectDestination, initialSearch = "" })
             <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "0.87rem", color: "var(--text-secondary)", marginBottom: "22px" }}>
               Try loosening your search terms or clearing region filters.
             </p>
-            <button onClick={handleResetFilters} style={{ ...pillBase, background: "var(--gradient-primary)", color: "#fff", border: "none", padding: "10px 24px", boxShadow: "0 2px 12px rgba(16, 185, 129, 0.35)" }}>
+            <button onClick={handleResetFilters} style={{ ...pillBase, background: "var(--gradient-primary)", color: "#fff", border: "none", padding: "10px 24px", boxShadow: "0 2px 12px rgba(99, 102, 241, 0.35)" }}>
               <RefreshCw size={14} style={{ marginRight: "6px" }} />
               Reset Filters
             </button>

@@ -113,7 +113,7 @@ export const DESTINATIONS = [
     lat: 25.3176,
     lon: 82.9739,
     heroVideo: "https://assets.mixkit.co/videos/preview/mixkit-floating-lanterns-on-river-water-41527-large.mp4",
-    coverImage: "https://images.unsplash.com/photo-1561361513-2d000a50f0dc?auto=format&fit=crop&w=1200&q=80",
+    coverImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Ahilya_Ghat_by_the_Ganges%2C_Varanasi.jpg/1280px-Ahilya_Ghat_by_the_Ganges%2C_Varanasi.jpg",
     description: "Varanasi is possibly the world's oldest continuously inhabited city, settled over 3,000 years ago. Known in Hindu cosmology as the city of Lord Shiva, it sits on the western bank of the Ganges with 84 ghats (stepped riverbanks). Witnessing the Ganga Aarti — priests performing fire rituals with brass lamps in synchronised movements — is one of humanity's most profound spectacles. Mark Twain wrote: 'Benares is older than history, older than tradition, older even than legend.'",
     highlights: [
       "Grand Evening Ganga Aarti at Dashashwamedh Ghat",
@@ -126,11 +126,21 @@ export const DESTINATIONS = [
         id: "dashashwamedh-ghat",
         name: "Dashashwamedh Ghat & Ganga Aarti",
         category: "Spiritual Ceremony",
-        image: "https://images.unsplash.com/photo-1561361513-2d000a50f0dc?auto=format&fit=crop&w=800&q=80",
-        description: "The main and busiest ghat in Varanasi, believed to be where Brahma created the universe. Every evening at sunset, seven priests perform the Agni Puja — a 45-minute fire ritual with large brass lamps, conch shells, and mantras that draws thousands of worshippers and tourists.",
+        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Dasaswamedh_ghat-varanasi_india-andres_larin.jpg/1280px-Dasaswamedh_ghat-varanasi_india-andres_larin.jpg",
+        description: "The main and most venerated ghat on the Ganges in Varanasi. Every evening at sunset, priests perform the spectacular Maha Aarti ritual — a choreographed devotional ceremony with tiered brass lamps, sacred incense, and ringing conch shells facing the holy river.",
         duration: "2 – 3 Hours",
         fee: "Free (boat viewing: ₹200 – ₹400)",
         insiderTip: "Hire a wooden boat from Assi Ghat by 5:30 PM and float along the river — viewing the Aarti from the water is far more magical than the crowded riverside."
+      },
+      {
+        id: "ahilya-ghat-riverfront",
+        name: "Ahilya Ghat & Heritage Riverfront",
+        category: "Historic Ghat & River Walk",
+        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Ahilya_Ghat_by_the_Ganges%2C_Varanasi.jpg/1280px-Ahilya_Ghat_by_the_Ganges%2C_Varanasi.jpg",
+        description: "Built in 1778 by the legendary Maratha Queen Ahilyabai Holkar of Indore, Ahilya Ghat is celebrated for its stately sandstone palaces, arches, and morning prayer atmosphere along the tranquil stretch of the Ganges.",
+        duration: "1 – 2 Hours",
+        fee: "Free",
+        insiderTip: "Take a walking tour of the northern ghats early in the morning before 8 AM when the morning mist rises off the Ganges and pilgrims offer silent prayers."
       }
     ]
   },
@@ -265,7 +275,7 @@ export const DESTINATIONS = [
     lat: 24.5854,
     lon: 73.7125,
     heroVideo: "https://assets.mixkit.co/videos/preview/mixkit-drone-shot-of-coastal-town-in-greece-42289-large.mp4",
-    coverImage: "https://images.unsplash.com/photo-1578328819058-b69f3a3b0f6b?auto=format&fit=crop&w=1200&q=80",
+    coverImage: "https://upload.wikimedia.org/wikipedia/commons/6/69/Udaipur_City_Palace.jpg",
     description: "Founded in 1559 by Maharana Udai Singh II, Udaipur is set around a series of interconnected lakes in the Aravalli Hills. The City Palace — a 400-year-old complex of 11 palaces — rises majestically from Lake Pichola's shore. The floating Lake Palace (now a luxury hotel) appears to drift on the water. Udaipur's gentle pace, rooftop cafés with lake views, and rich Mewar cultural heritage (folk dances, miniature painting schools, and silver jewellery craft) make it India's most celebrated romantic destination.",
     highlights: [
       "Lake Pichola sunset solar boat cruise to Jag Mandir island",
@@ -278,11 +288,21 @@ export const DESTINATIONS = [
         id: "city-palace-udaipur",
         name: "Udaipur City Palace",
         category: "Royal Residence & Museum",
-        image: "https://images.unsplash.com/photo-1568495248636-6432b97bd949?auto=format&fit=crop&w=800&q=80",
+        image: "https://upload.wikimedia.org/wikipedia/commons/6/69/Udaipur_City_Palace.jpg",
         description: "Built over 400 years by successive Mewar rulers, this is the largest palace complex in Rajasthan. Highlights include Mor Chowk (Peacock Courtyard) lined with 5,000 glass mosaic tiles, the Crystal Gallery housing a crystal furniture collection ordered from England in 1877, and Manek Mahal with Chinese and Dutch tiles.",
         duration: "3 – 4 Hours",
         fee: "₹300 (City Palace Museum)",
         insiderTip: "Visit Mor Chowk during early morning — the peacock mosaics catch slanting light beautifully. The rooftop terrace offers the best direct view of Lake Pichola."
+      },
+      {
+        id: "lake-pichola-jag-mandir",
+        name: "Lake Pichola & Jag Mandir Island",
+        category: "Scenic Lake & Island Palace",
+        image: "https://upload.wikimedia.org/wikipedia/commons/d/d2/Udaipur_Lake_India.JPG",
+        description: "Lake Pichola is an artificial freshwater lake created in 1362 AD. It hosts four islands including Jag Niwas (Lake Palace) and Jag Mandir (Lake Garden Palace with marble elephants). A boat cruise across the lake at sunset provides breathtaking panoramic views of the Aravalli hills, City Palace ghats, and vintage havelis reflecting in the calm waters.",
+        duration: "2 Hours (Sunset Cruise)",
+        fee: "₹400 – ₹700 (Boat Ride)",
+        insiderTip: "Take the boat from Rameshwar Ghat right before dusk so you arrive at Jag Mandir island as the City Palace across the lake lights up in golden floodlights."
       }
     ]
   },
@@ -379,7 +399,7 @@ export const DESTINATIONS = [
     lat: 31.62,
     lon: 74.8765,
     heroVideo: "https://assets.mixkit.co/videos/preview/mixkit-sunset-over-a-historic-monument-41524-large.mp4",
-    coverImage: "https://images.unsplash.com/photo-1514222709107-a180c68d72b4?auto=format&fit=crop&w=1200&q=80",
+    coverImage: "https://upload.wikimedia.org/wikipedia/commons/9/94/The_Golden_Temple_of_Amrithsar_7.jpg",
     description: "Amritsar is the spiritual and cultural heart of Sikhism, founded in 1577 by Guru Ram Das. The Harmandir Sahib (Golden Temple) is gilded with 750 kg of real gold and sits at the centre of the sacred Amrit Sarovar (Pool of Nectar). The attached Langar (community kitchen) serves free meals to 100,000+ people daily — regardless of caste, religion, or nationality. Every visitor is welcome to help roll chapatis. The Wagah Border ceremony at sunset (30 km away) — where Indian and Pakistani soldiers perform a choreographed flag-lowering — draws 15,000 spectators daily.",
     highlights: [
       "Harmandir Sahib golden illumination at night",
@@ -392,11 +412,21 @@ export const DESTINATIONS = [
         id: "golden-temple-main",
         name: "Harmandir Sahib (Golden Temple)",
         category: "Supreme Sikh Sacred Shrine",
-        image: "https://images.unsplash.com/photo-1514222709107-a180c68d72b4?auto=format&fit=crop&w=800&q=80",
+        image: "https://upload.wikimedia.org/wikipedia/commons/9/94/The_Golden_Temple_of_Amrithsar_7.jpg",
         description: "The holiest shrine in Sikhism, originally built in 1581 and rebuilt after Afghan attacks. The four-storey marble temple is coated with 750 kg of gold donated by Maharaja Ranjit Singh in the 1800s. Its four entrances represent openness to all four directions — symbolising that people of all faiths are welcome. The reflection in Amrit Sarovar at night is transcendently beautiful.",
         duration: "3 – 4 Hours",
         fee: "Free (head covering required)",
         insiderTip: "Visit around 9:30 PM for the nightly Palki Sahib procession — when the Guru Granth Sahib is ceremonially carried to its nighttime resting place to the sound of kirtan (devotional music)."
+      },
+      {
+        id: "jallianwala-bagh-memorial",
+        name: "Jallianwala Bagh National Memorial",
+        category: "National Freedom Memorial",
+        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Jallianwala_Bagh%2C_Amritsar_01.jpg/1280px-Jallianwala_Bagh%2C_Amritsar_01.jpg",
+        description: "A historic public garden and memorial of profound national importance, established in 1951 to commemorate the massacre of peaceful Indian protesters by British colonial forces on 13 April 1919. The site preserves bullet holes on the brick walls and the Martyrs' Well (Shahidi Khuh) into which hundreds leaped.",
+        duration: "1 – 2 Hours",
+        fee: "Free",
+        insiderTip: "Walk through the narrow entrance passage where General Dyer blocked the exit — it evokes profound historical reflection. The eternal flame (Amar Jawan Jyoti) stands in the centre."
       }
     ]
   },

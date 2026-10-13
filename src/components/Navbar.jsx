@@ -38,7 +38,7 @@ export const Navbar = ({ onOpenSettings, onSelectLocation, currentLocation, them
           position: "absolute",
           top: 0, left: 0, right: 0,
           height: "2px",
-          background: "linear-gradient(90deg, transparent 0%, #10b981 30%, #34d399 70%, transparent 100%)",
+          background: "linear-gradient(90deg, transparent 0%, #6366f1 30%, #8b5cf6 70%, transparent 100%)",
           opacity: 0.8
         }} />
       )}
@@ -54,9 +54,9 @@ export const Navbar = ({ onOpenSettings, onSelectLocation, currentLocation, them
           <div style={{
             width: "42px", height: "42px",
             borderRadius: "12px",
-            background: "linear-gradient(135deg, #10b981, #059669)",
+            background: "linear-gradient(135deg, #6366f1, #4f46e5)",
             display: "flex", alignItems: "center", justifyContent: "center",
-            boxShadow: "0 4px 16px rgba(16, 185, 129, 0.35)",
+            boxShadow: "0 4px 16px rgba(99, 102, 241, 0.35)",
             flexShrink: 0
           }}>
             <Compass size={22} color="#ffffff" />
@@ -69,7 +69,7 @@ export const Navbar = ({ onOpenSettings, onSelectLocation, currentLocation, them
               color: "var(--text-primary)"
             }}>
               Yatra<span style={{
-                background: "linear-gradient(90deg, #10b981, #34d399)",
+                background: "linear-gradient(90deg, #6366f1, #8b5cf6)",
                 WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent"
               }}>AI</span>
             </span>
@@ -106,8 +106,8 @@ export const Navbar = ({ onOpenSettings, onSelectLocation, currentLocation, them
                 transition: "all 0.2s ease"
               }}
               onMouseEnter={(e) => {
-                e.currentTarget.style.background = "rgba(16, 185, 129, 0.1)";
-                e.currentTarget.style.color = "var(--accent-emerald)";
+                e.currentTarget.style.background = "rgba(99, 102, 241, 0.1)";
+                e.currentTarget.style.color = "var(--accent-primary)";
               }}
               onMouseLeave={(e) => {
                 e.currentTarget.style.background = "none";
@@ -126,9 +126,9 @@ export const Navbar = ({ onOpenSettings, onSelectLocation, currentLocation, them
             onClick={onSelectLocation}
             style={{
               display: "flex", alignItems: "center", gap: "5px",
-              background: "rgba(16, 185, 129, 0.08)",
+              background: "rgba(99, 102, 241, 0.08)",
               border: "1px solid var(--border-subtle)",
-              color: currentLocation ? "var(--accent-emerald)" : "var(--text-secondary)",
+              color: currentLocation ? "var(--accent-primary)" : "var(--text-secondary)",
               padding: "7px 14px", borderRadius: "9999px",
               fontFamily: "'DM Sans', sans-serif",
               fontSize: "0.8rem", fontWeight: "600",
@@ -136,7 +136,7 @@ export const Navbar = ({ onOpenSettings, onSelectLocation, currentLocation, them
               maxWidth: "140px"
             }}
           >
-            <MapPin size={13} color={currentLocation ? "var(--accent-emerald)" : "var(--text-secondary)"} />
+            <MapPin size={13} color={currentLocation ? "var(--accent-primary)" : "var(--text-secondary)"} />
             <span style={{ overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>
               {currentLocation ? currentLocation.nearestDestination.name : "Set Location"}
             </span>
@@ -154,16 +154,16 @@ export const Navbar = ({ onOpenSettings, onSelectLocation, currentLocation, them
               fontFamily: "'DM Sans', sans-serif",
               fontSize: "0.82rem", fontWeight: "700",
               cursor: "pointer",
-              boxShadow: "0 2px 10px rgba(16, 185, 129, 0.3)",
+              boxShadow: "0 2px 10px rgba(99, 102, 241, 0.3)",
               transition: "all 0.22s ease"
             }}
             onMouseEnter={(e) => {
               e.currentTarget.style.transform = "translateY(-1px)";
-              e.currentTarget.style.boxShadow = "0 4px 16px rgba(16, 185, 129, 0.45)";
+              e.currentTarget.style.boxShadow = "0 4px 16px rgba(99, 102, 241, 0.45)";
             }}
             onMouseLeave={(e) => {
               e.currentTarget.style.transform = "translateY(0)";
-              e.currentTarget.style.boxShadow = "0 2px 10px rgba(16, 185, 129, 0.3)";
+              e.currentTarget.style.boxShadow = "0 2px 10px rgba(99, 102, 241, 0.3)";
             }}
           >
             <Sparkles size={14} color="#ffffff" />
@@ -176,7 +176,7 @@ export const Navbar = ({ onOpenSettings, onSelectLocation, currentLocation, them
             title="Toggle theme"
             style={{
               width: "36px", height: "36px", borderRadius: "10px",
-              background: "rgba(16, 185, 129, 0.08)",
+              background: "rgba(99, 102, 241, 0.08)",
               border: "1px solid var(--border-subtle)",
               color: "var(--text-secondary)",
               display: "flex", alignItems: "center", justifyContent: "center",
@@ -192,7 +192,7 @@ export const Navbar = ({ onOpenSettings, onSelectLocation, currentLocation, them
             title="Settings"
             style={{
               width: "36px", height: "36px", borderRadius: "10px",
-              background: "rgba(16, 185, 129, 0.08)",
+              background: "rgba(99, 102, 241, 0.08)",
               border: "1px solid var(--border-subtle)",
               color: "var(--text-secondary)",
               display: "flex", alignItems: "center", justifyContent: "center",

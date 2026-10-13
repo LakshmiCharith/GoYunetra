@@ -259,9 +259,9 @@ export const TravelToolsSection = () => {
                         flex: 1,
                         padding: "8px 12px",
                         borderRadius: "var(--radius-sm)",
-                        background: tier === item.id ? "rgba(16, 185, 129, 0.15)" : "var(--bg-input)",
-                        border: tier === item.id ? "1px solid var(--accent-emerald)" : "1px solid var(--border-subtle)",
-                        color: tier === item.id ? "var(--accent-emerald)" : "var(--text-secondary)",
+                        background: tier === item.id ? "rgba(99, 102, 241, 0.15)" : "var(--bg-input)",
+                        border: tier === item.id ? "1px solid var(--accent-primary)" : "1px solid var(--border-subtle)",
+                        color: tier === item.id ? "var(--accent-primary)" : "var(--text-secondary)",
                         fontSize: "0.8rem",
                         fontWeight: "700",
                         cursor: "pointer"
@@ -366,7 +366,7 @@ export const TravelToolsSection = () => {
               </div>
 
               <div style={{ marginTop: "24px", paddingTop: "16px", borderTop: "1px solid var(--border-subtle)", fontSize: "0.78rem", color: "var(--text-muted)", display: "flex", alignItems: "center", gap: "6px" }}>
-                <Shield size={14} color="var(--accent-emerald)" />
+                <Shield size={14} color="var(--accent-primary)" />
                 <span>Estimates include average mid-season rates and local street dining.</span>
               </div>
             </div>
@@ -433,7 +433,7 @@ export const TravelToolsSection = () => {
                       color: "var(--text-primary)"
                     }}
                   >
-                    <CheckCircle2 size={16} color="var(--accent-emerald)" />
+                    <CheckCircle2 size={16} color="var(--accent-primary)" />
                     <span>{place}</span>
                   </div>
                 ))}
@@ -499,8 +499,8 @@ export const TravelToolsSection = () => {
                     style={{
                       padding: "14px 18px",
                       borderRadius: "var(--radius-sm)",
-                      background: isChecked ? "rgba(16, 185, 129, 0.15)" : "var(--bg-input)",
-                      border: isChecked ? "1px solid var(--accent-emerald)" : "1px solid var(--border-subtle)",
+                      background: isChecked ? "rgba(99, 102, 241, 0.15)" : "var(--bg-input)",
+                      border: isChecked ? "1px solid var(--accent-primary)" : "1px solid var(--border-subtle)",
                       display: "flex",
                       alignItems: "center",
                       gap: "12px",
@@ -512,9 +512,9 @@ export const TravelToolsSection = () => {
                       type="checkbox"
                       checked={isChecked}
                       onChange={() => {}}
-                      style={{ width: "18px", height: "18px", accentColor: "var(--accent-emerald)", cursor: "pointer" }}
+                      style={{ width: "18px", height: "18px", accentColor: "var(--accent-primary)", cursor: "pointer" }}
                     />
-                    <span style={{ fontSize: "0.88rem", fontWeight: "500", color: isChecked ? "var(--accent-emerald)" : "var(--text-primary)", textDecoration: isChecked ? "line-through" : "none" }}>
+                    <span style={{ fontSize: "0.88rem", fontWeight: "500", color: isChecked ? "var(--accent-primary)" : "var(--text-primary)", textDecoration: isChecked ? "line-through" : "none" }}>
                       {item}
                     </span>
                   </div>
