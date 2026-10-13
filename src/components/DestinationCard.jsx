@@ -97,7 +97,7 @@ export const DestinationCard = ({ destination, onClick }) => {
           display: "flex", alignItems: "center", gap: "6px"
         }}>
           <span style={{ width: "6px", height: "6px", borderRadius: "50%", background: cardAccent }} />
-          <span style={{ fontFamily: "'Space Mono', monospace", fontSize: "0.62rem", fontWeight: "700", color: "#f0fdf4", letterSpacing: "0.05em", textTransform: "uppercase" }}>
+          <span style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: "0.62rem", fontWeight: "700", color: "#f0fdf4", letterSpacing: "0.05em", textTransform: "uppercase" }}>
             {destination.category}
           </span>
         </div>
@@ -110,7 +110,7 @@ export const DestinationCard = ({ destination, onClick }) => {
           padding: "4px 10px", borderRadius: "9999px",
           display: "flex", alignItems: "center", gap: "4px",
           fontSize: "0.8rem", fontWeight: "700", color: "#fbbf24",
-          fontFamily: "'Space Mono', monospace"
+          fontFamily: "'JetBrains Mono', monospace"
         }}>
           <Star size={12} fill="#fbbf24" color="#fbbf24" />
           {destination.rating}
@@ -125,7 +125,7 @@ export const DestinationCard = ({ destination, onClick }) => {
             padding: "3px 10px", borderRadius: "9999px",
             display: "flex", alignItems: "center", gap: "5px",
             fontSize: "0.73rem", fontWeight: "600", color: "#f0fdf4",
-            fontFamily: "'Inter', sans-serif"
+            fontFamily: "'DM Sans', sans-serif"
           }}>
             <Thermometer size={11} color="#fbbf24" />
             {weather.temp}°C {weather.condition}
@@ -138,14 +138,14 @@ export const DestinationCard = ({ destination, onClick }) => {
         <div>
           <div style={{ display: "flex", alignItems: "center", gap: "5px", marginBottom: "6px" }}>
             <MapPin size={12} color={cardAccent} />
-            <span style={{ fontFamily: "'Space Mono', monospace", fontSize: "0.66rem", color: "var(--text-muted)", letterSpacing: "0.04em" }}>{locationLine}</span>
+            <span style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: "0.66rem", color: "var(--text-muted)", letterSpacing: "0.04em" }}>{locationLine}</span>
           </div>
 
-          <h3 style={{ fontFamily: "'Outfit', sans-serif", fontSize: "1.2rem", fontWeight: "800", color: "var(--text-primary)", marginBottom: "8px", lineHeight: 1.2 }}>
+          <h3 style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: "1.2rem", fontWeight: "800", color: "var(--text-primary)", marginBottom: "8px", lineHeight: 1.2 }}>
             {destination.name}
           </h3>
 
-          <p style={{ fontFamily: "'Inter', sans-serif", fontSize: "0.82rem", color: "var(--text-secondary)", lineHeight: 1.5, display: "-webkit-box", WebkitLineClamp: 2, WebkitBoxOrient: "vertical", overflow: "hidden" }}>
+          <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "0.82rem", color: "var(--text-secondary)", lineHeight: 1.5, display: "-webkit-box", WebkitLineClamp: 2, WebkitBoxOrient: "vertical", overflow: "hidden" }}>
             {destination.tagline}
           </p>
         </div>
@@ -153,10 +153,10 @@ export const DestinationCard = ({ destination, onClick }) => {
         {/* Footer */}
         <div style={{ marginTop: "16px" }}>
           <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", borderTop: "1px solid var(--border-subtle)", paddingTop: "12px", marginBottom: "12px" }}>
-            <div style={{ display: "flex", alignItems: "center", gap: "4px", fontFamily: "'Space Mono', monospace", fontSize: "0.66rem", color: "var(--text-muted)", letterSpacing: "0.04em" }}>
+            <div style={{ display: "flex", alignItems: "center", gap: "4px", fontFamily: "'JetBrains Mono', monospace", fontSize: "0.66rem", color: "var(--text-muted)", letterSpacing: "0.04em" }}>
               <Calendar size={11} /> {destination.bestMonths}
             </div>
-            <span style={{ fontFamily: "'Space Mono', monospace", fontSize: "0.76rem", fontWeight: "700", color: "var(--accent-emerald)" }}>
+            <span style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: "0.76rem", fontWeight: "700", color: "var(--accent-emerald)" }}>
               {destination.priceLevel}
             </span>
           </div>
@@ -168,7 +168,7 @@ export const DestinationCard = ({ destination, onClick }) => {
               background: "rgba(16, 185, 129, 0.08)",
               border: "1px solid var(--border-subtle)",
               color: "var(--text-primary)",
-              fontFamily: "'Inter', sans-serif", fontWeight: "700", fontSize: "0.83rem",
+              fontFamily: "'DM Sans', sans-serif", fontWeight: "700", fontSize: "0.83rem",
               display: "flex", alignItems: "center", justifyContent: "center", gap: "6px",
               cursor: "pointer", transition: "all 0.2s ease"
             }}

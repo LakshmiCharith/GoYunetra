@@ -40,7 +40,7 @@ export const Hero = ({ onSearch, onExploreClick, onOpenAI }) => {
       <div style={{ position: "relative", zIndex: 2, width: "100%", maxWidth: "1280px", margin: "0 auto", padding: "140px 28px 120px", textAlign: "center" }}>
 
         {/* Main headline */}
-        <h1 style={{ fontFamily: "'Outfit', sans-serif", fontSize: "clamp(2.8rem, 6.5vw, 5.2rem)", fontWeight: "900", lineHeight: 1.08, color: "var(--text-primary)", marginBottom: "20px", letterSpacing: "-0.04em" }}>
+        <h1 style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: "clamp(2.8rem, 6.5vw, 5.2rem)", fontWeight: "900", lineHeight: 1.08, color: "var(--text-primary)", marginBottom: "20px", letterSpacing: "-0.04em" }}>
           Discover 30+ Extraordinary<br />
           <span style={{ background: "linear-gradient(90deg, #10b981 0%, #34d399 60%, #fbbf24 100%)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", backgroundClip: "text" }}>
             Wonders Across India &amp; the World
@@ -48,7 +48,7 @@ export const Hero = ({ onSearch, onExploreClick, onOpenAI }) => {
         </h1>
 
         {/* Subtitle */}
-        <p style={{ fontFamily: "'Inter', sans-serif", fontSize: "clamp(1rem, 1.8vw, 1.18rem)", color: "var(--text-secondary)", maxWidth: "680px", margin: "0 auto 42px", lineHeight: 1.7, fontWeight: "400" }}>
+        <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "clamp(1rem, 1.8vw, 1.18rem)", color: "var(--text-secondary)", maxWidth: "680px", margin: "0 auto 42px", lineHeight: 1.7, fontWeight: "400" }}>
           Cinematic ambient video backgrounds, live weather, AI travel planning and currency conversion — designed for serene, effortless discovery.
         </p>
 
@@ -73,12 +73,12 @@ export const Hero = ({ onSearch, onExploreClick, onOpenAI }) => {
               placeholder="Search Jaipur, Taj Mahal, Kerala, Swiss Alps, Paris..."
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
-              style={{ flex: 1, background: "transparent", border: "none", outline: "none", color: "var(--text-primary)", fontFamily: "'Inter', sans-serif", fontSize: "0.95rem", fontWeight: "500" }}
+              style={{ flex: 1, background: "transparent", border: "none", outline: "none", color: "var(--text-primary)", fontFamily: "'DM Sans', sans-serif", fontSize: "0.95rem", fontWeight: "500" }}
             />
             <button type="submit" style={{
               background: "var(--gradient-primary)",
               color: "#ffffff",
-              fontFamily: "'Inter', sans-serif", fontWeight: "700", fontSize: "0.88rem",
+              fontFamily: "'DM Sans', sans-serif", fontWeight: "700", fontSize: "0.88rem",
               padding: "12px 22px", borderRadius: "9999px", border: "none", cursor: "pointer",
               display: "flex", alignItems: "center", gap: "6px", whiteSpace: "nowrap",
               boxShadow: "0 2px 10px rgba(16, 185, 129, 0.35)",
@@ -94,7 +94,7 @@ export const Hero = ({ onSearch, onExploreClick, onOpenAI }) => {
 
         {/* Quick tags */}
         <div style={{ display: "flex", justifyContent: "center", flexWrap: "wrap", gap: "8px", marginBottom: "48px" }}>
-          <span style={{ fontFamily: "'Space Mono', monospace", fontSize: "0.7rem", color: "var(--text-muted)", alignSelf: "center", letterSpacing: "0.06em" }}>POPULAR //</span>
+          <span style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: "0.7rem", color: "var(--text-muted)", alignSelf: "center", letterSpacing: "0.06em" }}>POPULAR //</span>
           {["Taj Mahal", "Jaipur", "Kerala", "Leh Ladakh", "Swiss Alps", "Maldives", "Paris", "Goa", "Tokyo"].map((tag) => (
             <button
               key={tag}
@@ -104,7 +104,7 @@ export const Hero = ({ onSearch, onExploreClick, onOpenAI }) => {
                 background: "rgba(16, 185, 129, 0.08)",
                 border: "1px solid var(--border-subtle)",
                 color: "var(--text-secondary)",
-                fontFamily: "'Inter', sans-serif", fontSize: "0.78rem", fontWeight: "600",
+                fontFamily: "'DM Sans', sans-serif", fontSize: "0.78rem", fontWeight: "600",
                 cursor: "pointer", transition: "all 0.18s ease"
               }}
               onMouseEnter={(e) => { e.currentTarget.style.background = "rgba(16, 185, 129, 0.18)"; e.currentTarget.style.borderColor = "var(--accent-emerald)"; e.currentTarget.style.color = "var(--accent-emerald)"; }}
@@ -122,7 +122,7 @@ export const Hero = ({ onSearch, onExploreClick, onOpenAI }) => {
             style={{
               background: "var(--gradient-primary)",
               color: "#ffffff",
-              fontFamily: "'Inter', sans-serif", fontWeight: "800", fontSize: "0.95rem",
+              fontFamily: "'DM Sans', sans-serif", fontWeight: "800", fontSize: "0.95rem",
               padding: "15px 32px", borderRadius: "9999px", border: "none", cursor: "pointer",
               display: "flex", alignItems: "center", gap: "8px",
               boxShadow: "0 4px 20px rgba(16, 185, 129, 0.4)",
@@ -139,7 +139,7 @@ export const Hero = ({ onSearch, onExploreClick, onOpenAI }) => {
               background: "rgba(16, 185, 129, 0.1)",
               backdropFilter: "blur(14px)",
               color: "var(--accent-emerald)",
-              fontFamily: "'Inter', sans-serif", fontWeight: "700", fontSize: "0.95rem",
+              fontFamily: "'DM Sans', sans-serif", fontWeight: "700", fontSize: "0.95rem",
               padding: "15px 32px", borderRadius: "9999px",
               border: "1.5px solid var(--border-bright)",
               cursor: "pointer",
@@ -175,10 +175,10 @@ export const Hero = ({ onSearch, onExploreClick, onOpenAI }) => {
               }}
             >
               <div style={{ position: "absolute", top: 0, left: 0, right: 0, height: "2px", background: `linear-gradient(90deg, transparent, ${stat.accent}, transparent)` }} />
-              <div style={{ fontFamily: "'Outfit', sans-serif", fontSize: "1.9rem", fontWeight: "900", color: stat.accent, lineHeight: 1, marginBottom: "6px" }}>
+              <div style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: "1.9rem", fontWeight: "900", color: stat.accent, lineHeight: 1, marginBottom: "6px" }}>
                 {stat.number}
               </div>
-              <div style={{ fontFamily: "'Space Mono', monospace", fontSize: "0.66rem", color: "var(--text-muted)", letterSpacing: "0.06em", textTransform: "uppercase" }}>
+              <div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: "0.66rem", color: "var(--text-muted)", letterSpacing: "0.06em", textTransform: "uppercase" }}>
                 {stat.label}
               </div>
             </div>
@@ -197,7 +197,7 @@ export const Hero = ({ onSearch, onExploreClick, onOpenAI }) => {
       }}>
         <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
           <Film size={14} color="var(--accent-emerald)" />
-          <span style={{ fontFamily: "'Space Mono', monospace", fontSize: "0.67rem", color: "var(--text-secondary)", letterSpacing: "0.12em", fontWeight: "700" }}>
+          <span style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: "0.67rem", color: "var(--text-secondary)", letterSpacing: "0.12em", fontWeight: "700" }}>
             ATMOSPHERE //
           </span>
           <div style={{ display: "flex", gap: "6px" }}>
@@ -212,7 +212,7 @@ export const Hero = ({ onSearch, onExploreClick, onOpenAI }) => {
                     : "rgba(16, 185, 129, 0.08)",
                   border: activeVideoIndex === idx ? "none" : "1px solid var(--border-subtle)",
                   color: activeVideoIndex === idx ? "#ffffff" : "var(--text-secondary)",
-                  fontFamily: "'Inter', sans-serif", fontSize: "0.76rem", fontWeight: "700",
+                  fontFamily: "'DM Sans', sans-serif", fontSize: "0.76rem", fontWeight: "700",
                   cursor: "pointer", transition: "all 0.2s ease",
                   boxShadow: activeVideoIndex === idx ? "0 2px 10px rgba(16, 185, 129, 0.35)" : "none"
                 }}

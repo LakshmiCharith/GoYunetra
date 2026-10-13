@@ -30,27 +30,27 @@ export const Footer = () => {
                 <Compass size={20} color="#ffffff" />
               </div>
               <div>
-                <span style={{ fontFamily: "'Outfit', sans-serif", fontSize: "1.3rem", fontWeight: "900", color: "var(--text-primary)", letterSpacing: "-0.03em" }}>
+                <span style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: "1.3rem", fontWeight: "900", color: "var(--text-primary)", letterSpacing: "-0.03em" }}>
                   Yatra<span style={{ background: "linear-gradient(90deg, #10b981, #34d399)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>AI</span>
                 </span>
-                <span style={{ display: "block", fontFamily: "'Space Mono', monospace", fontSize: "0.55rem", color: "var(--text-muted)", letterSpacing: "0.12em", textTransform: "uppercase" }}>
+                <span style={{ display: "block", fontFamily: "'JetBrains Mono', monospace", fontSize: "0.55rem", color: "var(--text-muted)", letterSpacing: "0.12em", textTransform: "uppercase" }}>
                   TRAVEL COMPANION
                 </span>
               </div>
             </div>
-            <p style={{ fontFamily: "'Inter', sans-serif", fontSize: "0.83rem", color: "var(--text-secondary)", lineHeight: 1.65, maxWidth: "280px" }}>
+            <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "0.83rem", color: "var(--text-secondary)", lineHeight: 1.65, maxWidth: "280px" }}>
               A peaceful, AI-powered travel discovery platform crafted to explore the wonders of India and the world without visual fatigue.
             </p>
           </div>
 
           {/* Features */}
           <div>
-            <h4 style={{ fontFamily: "'Space Mono', monospace", fontSize: "0.68rem", fontWeight: "700", color: "var(--accent-emerald)", letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: "18px" }}>
+            <h4 style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: "0.68rem", fontWeight: "700", color: "var(--accent-emerald)", letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: "18px" }}>
               FEATURES //
             </h4>
             <ul style={{ listStyle: "none", display: "flex", flexDirection: "column", gap: "9px" }}>
               {features.map((f) => (
-                <li key={f} style={{ display: "flex", alignItems: "center", gap: "8px", fontFamily: "'Inter', sans-serif", fontSize: "0.82rem", color: "var(--text-secondary)" }}>
+                <li key={f} style={{ display: "flex", alignItems: "center", gap: "8px", fontFamily: "'DM Sans', sans-serif", fontSize: "0.82rem", color: "var(--text-secondary)" }}>
                   <Check size={13} color="var(--accent-emerald)" />
                   {f}
                 </li>
@@ -60,7 +60,7 @@ export const Footer = () => {
 
           {/* Tech Stack */}
           <div>
-            <h4 style={{ fontFamily: "'Space Mono', monospace", fontSize: "0.68rem", fontWeight: "700", color: "var(--accent-teal)", letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: "18px" }}>
+            <h4 style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: "0.68rem", fontWeight: "700", color: "var(--accent-teal)", letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: "18px" }}>
               BUILT WITH //
             </h4>
             <div style={{ display: "flex", flexWrap: "wrap", gap: "8px" }}>
@@ -71,7 +71,7 @@ export const Footer = () => {
                     padding: "4px 12px", borderRadius: "9999px",
                     background: "rgba(16, 185, 129, 0.08)",
                     border: "1px solid var(--border-subtle)",
-                    fontFamily: "'Space Mono', monospace",
+                    fontFamily: "'JetBrains Mono', monospace",
                     fontSize: "0.66rem", fontWeight: "700",
                     color: "var(--accent-emerald)",
                     letterSpacing: "0.04em"
@@ -89,10 +89,10 @@ export const Footer = () => {
           borderTop: "1px solid var(--border-subtle)", paddingTop: "22px",
           display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: "12px"
         }}>
-          <span style={{ fontFamily: "'Space Mono', monospace", fontSize: "0.67rem", color: "var(--text-muted)", letterSpacing: "0.06em" }}>
+          <span style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: "0.67rem", color: "var(--text-muted)", letterSpacing: "0.06em" }}>
             © {year} YATRAAI // INDIA & WORLD TRAVEL APPLICATION
           </span>
-          <div style={{ display: "flex", alignItems: "center", gap: "6px", fontFamily: "'Space Mono', monospace", fontSize: "0.67rem", color: "var(--text-muted)" }}>
+          <div style={{ display: "flex", alignItems: "center", gap: "6px", fontFamily: "'JetBrains Mono', monospace", fontSize: "0.67rem", color: "var(--text-muted)" }}>
             <span>CRAFTED WITH</span>
             <Heart size={12} color="#fb7185" fill="#fb7185" />
             <span>IN REACT</span>

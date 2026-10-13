@@ -43,7 +43,7 @@ export const DestinationExplorer = ({ onSelectDestination, initialSearch = "" })
 
   const pillBase = {
     padding: "6px 16px", borderRadius: "9999px",
-    fontFamily: "'Inter', sans-serif", fontSize: "0.8rem", fontWeight: "600",
+    fontFamily: "'DM Sans', sans-serif", fontSize: "0.8rem", fontWeight: "600",
     cursor: "pointer", transition: "all 0.18s ease", border: "1px solid transparent"
   };
 
@@ -60,7 +60,7 @@ export const DestinationExplorer = ({ onSelectDestination, initialSearch = "" })
             CURATED DIRECTORY // 30+ DESTINATIONS
           </div>
           <h2 style={{
-            fontFamily: "'Outfit', sans-serif",
+            fontFamily: "'Plus Jakarta Sans', sans-serif",
             fontSize: "clamp(2rem, 4vw, 3.2rem)",
             fontWeight: "900",
             color: "var(--text-primary)",
@@ -72,7 +72,7 @@ export const DestinationExplorer = ({ onSelectDestination, initialSearch = "" })
               Destinations Across Continents
             </span>
           </h2>
-          <p style={{ fontFamily: "'Inter', sans-serif", fontSize: "1rem", color: "var(--text-secondary)", maxWidth: "560px", margin: "0 auto" }}>
+          <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "1rem", color: "var(--text-secondary)", maxWidth: "560px", margin: "0 auto" }}>
             Filter by travel style and region, track live local weather, and plan unforgettable journeys.
           </p>
         </div>
@@ -108,7 +108,7 @@ export const DestinationExplorer = ({ onSelectDestination, initialSearch = "" })
                   background: "var(--bg-input)",
                   border: "1px solid var(--border-subtle)",
                   color: "var(--text-primary)",
-                  fontFamily: "'Inter', sans-serif",
+                  fontFamily: "'DM Sans', sans-serif",
                   fontSize: "0.88rem",
                   outline: "none",
                   transition: "border-color 0.2s ease, box-shadow 0.2s ease"
@@ -127,7 +127,7 @@ export const DestinationExplorer = ({ onSelectDestination, initialSearch = "" })
                   background: "var(--bg-input)",
                   border: "1px solid var(--border-subtle)",
                   color: "var(--text-primary)",
-                  fontFamily: "'Inter', sans-serif", fontSize: "0.85rem",
+                  fontFamily: "'DM Sans', sans-serif", fontSize: "0.85rem",
                   outline: "none", cursor: "pointer"
                 }}
               >
@@ -139,7 +139,7 @@ export const DestinationExplorer = ({ onSelectDestination, initialSearch = "" })
 
           {/* Category pills */}
           <div>
-            <div style={{ fontFamily: "'Space Mono', monospace", fontSize: "0.64rem", color: "var(--text-muted)", letterSpacing: "0.1em", marginBottom: "10px", textTransform: "uppercase" }}>
+            <div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: "0.64rem", color: "var(--text-muted)", letterSpacing: "0.1em", marginBottom: "10px", textTransform: "uppercase" }}>
               Experience //
             </div>
             <div style={{ display: "flex", gap: "8px", flexWrap: "wrap" }}>
@@ -166,7 +166,7 @@ export const DestinationExplorer = ({ onSelectDestination, initialSearch = "" })
 
           {/* Continent pills */}
           <div>
-            <div style={{ fontFamily: "'Space Mono', monospace", fontSize: "0.64rem", color: "var(--text-muted)", letterSpacing: "0.1em", marginBottom: "10px", textTransform: "uppercase" }}>
+            <div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: "0.64rem", color: "var(--text-muted)", letterSpacing: "0.1em", marginBottom: "10px", textTransform: "uppercase" }}>
               Region //
             </div>
             <div style={{ display: "flex", gap: "8px", flexWrap: "wrap" }}>
@@ -192,7 +192,7 @@ export const DestinationExplorer = ({ onSelectDestination, initialSearch = "" })
 
           {/* Results count */}
           <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
-            <span style={{ fontFamily: "'Space Mono', monospace", fontSize: "0.68rem", color: "var(--text-muted)", letterSpacing: "0.06em" }}>
+            <span style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: "0.68rem", color: "var(--text-muted)", letterSpacing: "0.06em" }}>
               SHOWING // <span style={{ color: "var(--accent-emerald)", fontWeight: "700" }}>{filteredDestinations.length}</span> DESTINATIONS
             </span>
             {(searchQuery || selectedCategory !== "all" || selectedContinent !== "all") && (
@@ -222,10 +222,10 @@ export const DestinationExplorer = ({ onSelectDestination, initialSearch = "" })
             maxWidth: "520px", margin: "0 auto"
           }}>
             <AlertCircle size={44} color="var(--accent-gold)" style={{ marginBottom: "16px" }} />
-            <h3 style={{ fontFamily: "'Outfit', sans-serif", fontSize: "1.2rem", fontWeight: "800", color: "var(--text-primary)", marginBottom: "10px" }}>
+            <h3 style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: "1.2rem", fontWeight: "800", color: "var(--text-primary)", marginBottom: "10px" }}>
               No Destinations Found
             </h3>
-            <p style={{ fontFamily: "'Inter', sans-serif", fontSize: "0.87rem", color: "var(--text-secondary)", marginBottom: "22px" }}>
+            <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "0.87rem", color: "var(--text-secondary)", marginBottom: "22px" }}>
               Try loosening your search terms or clearing region filters.
             </p>
             <button onClick={handleResetFilters} style={{ ...pillBase, background: "var(--gradient-primary)", color: "#fff", border: "none", padding: "10px 24px", boxShadow: "0 2px 12px rgba(16, 185, 129, 0.35)" }}>

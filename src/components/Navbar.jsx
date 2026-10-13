@@ -63,7 +63,7 @@ export const Navbar = ({ onOpenSettings, onSelectLocation, currentLocation, them
           </div>
           <div>
             <span style={{
-              fontFamily: "'Outfit', sans-serif",
+              fontFamily: "'Plus Jakarta Sans', sans-serif",
               fontSize: "1.4rem", fontWeight: "900",
               letterSpacing: "-0.04em", lineHeight: 1,
               color: "var(--text-primary)"
@@ -75,7 +75,7 @@ export const Navbar = ({ onOpenSettings, onSelectLocation, currentLocation, them
             </span>
             <span style={{
               display: "block",
-              fontFamily: "'Space Mono', monospace",
+              fontFamily: "'JetBrains Mono', monospace",
               fontSize: "0.56rem", fontWeight: "700",
               color: "var(--text-muted)",
               letterSpacing: "0.14em",
@@ -99,7 +99,7 @@ export const Navbar = ({ onOpenSettings, onSelectLocation, currentLocation, them
               style={{
                 background: "none", border: "none",
                 color: "var(--text-secondary)",
-                fontFamily: "'Inter', sans-serif",
+                fontFamily: "'DM Sans', sans-serif",
                 fontSize: "0.85rem", fontWeight: "600",
                 cursor: "pointer", padding: "7px 14px",
                 borderRadius: "8px",
@@ -130,7 +130,7 @@ export const Navbar = ({ onOpenSettings, onSelectLocation, currentLocation, them
               border: "1px solid var(--border-subtle)",
               color: currentLocation ? "var(--accent-emerald)" : "var(--text-secondary)",
               padding: "7px 14px", borderRadius: "9999px",
-              fontFamily: "'Inter', sans-serif",
+              fontFamily: "'DM Sans', sans-serif",
               fontSize: "0.8rem", fontWeight: "600",
               cursor: "pointer", transition: "all 0.2s ease",
               maxWidth: "140px"
@@ -151,7 +151,7 @@ export const Navbar = ({ onOpenSettings, onSelectLocation, currentLocation, them
               border: "none",
               color: "#ffffff",
               padding: "8px 18px", borderRadius: "9999px",
-              fontFamily: "'Inter', sans-serif",
+              fontFamily: "'DM Sans', sans-serif",
               fontSize: "0.82rem", fontWeight: "700",
               cursor: "pointer",
               boxShadow: "0 2px 10px rgba(16, 185, 129, 0.3)",
