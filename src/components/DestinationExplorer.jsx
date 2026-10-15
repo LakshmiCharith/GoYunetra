@@ -50,7 +50,7 @@ export const DestinationExplorer = ({ onSelectDestination, initialSearch = "" })
   return (
     <section id="explorer" style={{ padding: "80px 0", position: "relative" }}>
       {/* Soothing top divider */}
-      <div style={{ height: "1px", background: "linear-gradient(to right, transparent, rgba(99, 102, 241,0.35), rgba(52,211,153,0.25), transparent)", marginBottom: "80px" }} />
+      <div style={{ height: "1px", background: "linear-gradient(to right, transparent, rgba(99, 102, 241,0.35), rgba(139, 92, 246, 0.25), transparent)", marginBottom: "80px" }} />
 
       <div className="container">
         {/* ── SECTION HEADER ── */}

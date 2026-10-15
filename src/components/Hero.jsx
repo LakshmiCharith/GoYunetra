@@ -159,7 +159,7 @@ export const Hero = ({ onSearch, onExploreClick, onOpenAI }) => {
             { number: "15+", label: "Indian Wonders", accent: "#f59e0b" },
             { number: "15+", label: "Global Icons", accent: "#6366f1" },
             { number: "30+", label: "Destinations", accent: "#8b5cf6" },
-            { number: "24/7", label: "AI Answers", accent: "#14b8a6" }
+            { number: "24/7", label: "AI Answers", accent: "#f43f5e" }
           ].map((stat) => (
             <div
               key={stat.label}
