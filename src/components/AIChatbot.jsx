@@ -6,7 +6,7 @@ export const AIChatbot = ({ destinationName = "World & India Destinations" }) =>
   const [messages, setMessages] = useState([
     {
       sender: "ai",
-      text: `Namaste & Hello! I am YatraAI Assistant. Ask me ANY question about travel, packing, flight hacks, local food, visas, or destinations around the world!`
+      text: `Namaste & Hello! I am GoYunetra Assistant. Ask me ANY question about travel, packing, flight hacks, local food, visas, or destinations around the world!`
     }
   ]);
   const [input, setInput] = useState("");
@@ -96,7 +96,7 @@ export const AIChatbot = ({ destinationName = "World & India Destinations" }) =>
           </div>
           <div>
             <h4 style={{ fontSize: "1.05rem", fontWeight: "800", color: "var(--text-primary)" }}>
-              YatraAI Assistant
+              GoYunetra Assistant
             </h4>
             <span style={{ fontSize: "0.75rem", color: "var(--text-secondary)", fontWeight: "600" }}>
               Universal Travel Intelligence • Responds Instantly
@@ -170,7 +170,7 @@ export const AIChatbot = ({ destinationName = "World & India Destinations" }) =>
         {loading && (
           <div style={{ display: "flex", alignItems: "center", gap: "8px", color: "var(--accent-primary)", fontSize: "0.82rem", fontWeight: "600", paddingLeft: "40px" }}>
             <RefreshCw size={15} className="animate-spin" />
-            <span>YatraAI is composing smart travel advice...</span>
+            <span>GoYunetra is composing smart travel advice...</span>
           </div>
         )}
         <div ref={chatEndRef} />

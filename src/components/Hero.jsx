@@ -149,7 +149,7 @@ export const Hero = ({ onSearch, onExploreClick, onOpenAI }) => {
             onMouseEnter={(e) => { e.currentTarget.style.background = "rgba(99, 102, 241, 0.2)"; e.currentTarget.style.borderColor = "var(--accent-primary)"; }}
             onMouseLeave={(e) => { e.currentTarget.style.background = "rgba(99, 102, 241, 0.1)"; e.currentTarget.style.borderColor = "var(--border-bright)"; }}
           >
-            <Sparkles size={18} color="var(--accent-primary)" /> Ask YatraAI
+            <Sparkles size={18} color="var(--accent-primary)" /> Ask GoYunetra
           </button>
         </div>
 

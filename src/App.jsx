@@ -157,7 +157,7 @@ export function App() {
       {!aiDrawerOpen && (
         <button
           onClick={() => setAiDrawerOpen(true)}
-          title="Open YatraAI Universal Assistant"
+          title="Open GoYunetra Universal Assistant"
           style={{
             position: "fixed",
             bottom: "28px",
@@ -188,7 +188,7 @@ export function App() {
           }}
         >
           <Sparkles size={18} color="#ffffff" />
-          <span>Ask YatraAI</span>
+          <span>Ask GoYunetra</span>
         </button>
       )}
     </div>

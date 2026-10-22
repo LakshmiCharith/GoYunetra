@@ -68,10 +68,10 @@ export const Navbar = ({ onOpenSettings, onSelectLocation, currentLocation, them
               letterSpacing: "-0.04em", lineHeight: 1,
               color: "var(--text-primary)"
             }}>
-              Yatra<span style={{
+              Go<span style={{
                 background: "linear-gradient(90deg, #6366f1, #8b5cf6)",
                 WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent"
-              }}>AI</span>
+              }}>Yunetra</span>
             </span>
             <span style={{
               display: "block",

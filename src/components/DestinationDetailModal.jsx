@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { X, Star, MapPin, Calendar, ShieldCheck, DollarSign, Cloud, Compass, Sparkles, Image as ImageIcon } from "lucide-react";
+import { X, MapPin, Calendar, Cloud, Compass, Sparkles, Image as ImageIcon } from "lucide-react";
 import { FamousPlacesGrid } from "./FamousPlacesGrid";
 import { WeatherCard } from "./WeatherCard";
 import { AIChatbot } from "./AIChatbot";
@@ -233,7 +233,7 @@ export const DestinationDetailModal = ({ destination, onClose }) => {
 
           {activeTab === "itinerary" && (
             <div className="animate-fade-in">
-              <ItineraryPlanner destinationName={destination.name} />
+              <ItineraryPlanner destinationName={destination.name} destination={destination} />
             </div>
           )}
         </div>

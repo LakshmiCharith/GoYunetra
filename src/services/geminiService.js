@@ -14,7 +14,7 @@ export const chatWithGemini = async (destinationName, userMessage, history = [])
   if (apiKey) {
     try {
       const ai = new GoogleGenAI({ apiKey });
-      const prompt = `You are YatraAI Universal Assistant, a friendly, ultra-knowledgeable travel guide, culture expert, and general companion.
+      const prompt = `You are GoYunetra Universal Assistant, a friendly, ultra-knowledgeable travel guide, culture expert, and general companion.
 You specialize in Indian heritage and global destinations (${destinationName}).
 Answer the user's question accurately, warmly, and comprehensively using clear markdown bullet points, bold key terms, and practical advice.
 
@@ -38,7 +38,7 @@ User Question: "${userMessage}"`;
 
   // Greetings & General Chit-Chat
   if (q.startsWith("hi") || q.startsWith("hello") || q.startsWith("namaste") || q.startsWith("hey") || q.includes("who are you") || q.includes("what can you do")) {
-    return `🙏 **Namaste & Welcome to YatraAI!**\n\n` +
+    return `🙏 **Namaste & Welcome to GoYunetra!**\n\n` +
       `I am your universal AI Travel & Culture Assistant. You can ask me **anything**, such as:\n` +
       `• 🕌 *Destination recommendations in India & around the world*\n` +
       `• 🍲 *Must-try foods, local recipes & street food spots*\n` +
@@ -112,37 +112,95 @@ User Question: "${userMessage}"`;
   }
 
   // Universal Fallback for ANY other question
-  return `✨ **YatraAI Smart Insights on "${userMessage}":**\n\n` +
+  return `✨ **GoYunetra Smart Insights on "${userMessage}":**\n\n` +
     `• **Overview**: Whether you are exploring ${destinationName} or planning a new adventure, thorough preparation makes all the difference.\n` +
     `• **Key Recommendation**: Early morning hours (6:00 AM - 9:00 AM) provide soft photography light, minimal crowds, and pleasant weather.\n` +
-    `• **Local Connection**: Connect with local guides, sample authentic regional street food, and use YatraAI's interactive **Travel Tools** to calculate budgets and packing checklists!\n\n` +
+    `• **Local Connection**: Connect with local guides, sample authentic regional street food, and use GoYunetra's interactive **Travel Tools** to calculate budgets and packing checklists!\n\n` +
     `*Feel free to ask me another specific question about food, hotels, itineraries, or travel tips!*`;
 };
 
+import { validateAndNormalizeItinerary } from "./itineraryValidator";
+
 /**
- * Generates a Day-by-Day Itinerary structured object
+ * Generates an enriched, theme-focused Day-by-Day Itinerary structured object
+ * Validated strictly for Food, Nature, History, and Adventure activities, locations, and coordinates.
  */
-export const generateItineraryWithGemini = async (destinationName, days = 3, pace = "balanced", budget = "mid-range") => {
+export const generateItineraryWithGemini = async (
+  destinationName,
+  days = 3,
+  pace = "balanced",
+  budget = "comfort",
+  selectedThemes = ["Food", "Nature", "History", "Adventure"],
+  destinationCoords = { lat: 27.1751, lon: 78.0421 },
+  travelers = 1
+) => {
   const apiKey = getGeminiKey();
+  const themesStr = selectedThemes.length > 0 ? selectedThemes.join(", ") : "Food, Nature, History, Adventure";
+  const baseLat = (destinationCoords && destinationCoords.lat) ? Number(destinationCoords.lat) : 27.1751;
+  const baseLon = (destinationCoords && destinationCoords.lon) ? Number(destinationCoords.lon) : 78.0421;
 
   if (apiKey) {
     try {
       const ai = new GoogleGenAI({ apiKey });
-      const prompt = `Generate a detailed ${days}-day travel itinerary for ${destinationName} (Pace: ${pace}, Budget: ${budget}).
-Return ONLY a valid JSON object matching this schema:
+      const prompt = `You are a world-class travel planner for ${destinationName}.
+Generate a comprehensive, high-quality ${days}-day day-by-day travel itinerary for ${destinationName}.
+Trip Parameters:
+- Pace: ${pace}
+- Budget Tier: ${budget}
+- Travelers: ${travelers}
+- High Priority Vibe Themes to feature heavily: ${themesStr} (Ensure every day includes activities explicitly categorized as either "Food", "Nature", "History", or "Adventure").
+- Base Coordinates: Near Latitude ${baseLat}, Longitude ${baseLon}
+
+Return ONLY a valid JSON object matching this exact schema without any markdown explanation:
 {
-  "title": "${days}-Day ${destinationName} Expedition",
-  "summary": "Short overview of the trip",
-  "totalEstimatedCost": "₹12,000 - ₹20,000 ($150 - $250)",
+  "title": "${days}-Day ${destinationName} Curated Expedition",
+  "summary": "An engaging 2-sentence overview of the trip experience",
+  "totalEstimatedCost": "₹15,000 - ₹24,000 ($180 - $290)",
+  "budgetTier": "${budget}",
   "days": [
     {
       "day": 1,
-      "theme": "Theme of Day 1",
-      "morning": "Morning activity",
-      "afternoon": "Afternoon activity",
-      "evening": "Evening activity",
-      "foodTip": "Recommended meal spot or cuisine",
-      "budget": "₹3,500 ($45)"
+      "theme": "Day theme (e.g. Royal Heritage & Street Food Quest)",
+      "budget": "₹3,500 ($42)",
+      "foodTip": "Specific insider local restaurant, market, or specialty dish to try",
+      "activities": [
+        {
+          "id": "d1-act1",
+          "timeSlot": "Morning",
+          "timeLabel": "08:30 AM – 11:30 AM",
+          "title": "Clear activity name",
+          "category": "History", // MUST be one of: "Food", "Nature", "History", "Adventure"
+          "locationName": "Real authentic place or landmark name in ${destinationName}",
+          "description": "Engaging description with practical traveler advice",
+          "cost": "₹250 / $3",
+          "lat": ${baseLat},
+          "lon": ${baseLon}
+        },
+        {
+          "id": "d1-act2",
+          "timeSlot": "Afternoon",
+          "timeLabel": "12:30 PM – 03:30 PM",
+          "title": "Clear activity name",
+          "category": "Food",
+          "locationName": "Real authentic culinary or cultural spot",
+          "description": "Engaging culinary or cultural description",
+          "cost": "₹500 / $6",
+          "lat": ${baseLat + 0.005},
+          "lon": ${baseLon + 0.005}
+        },
+        {
+          "id": "d1-act3",
+          "timeSlot": "Evening",
+          "timeLabel": "05:00 PM – 08:30 PM",
+          "title": "Clear activity name",
+          "category": "Nature",
+          "locationName": "Real scenic sunset or promenade spot",
+          "description": "Evening view or relaxation description",
+          "cost": "₹150 / $2",
+          "lat": ${baseLat - 0.004},
+          "lon": ${baseLon + 0.007}
+        }
+      ]
     }
   ]
 }`;
@@ -152,42 +210,31 @@ Return ONLY a valid JSON object matching this schema:
         contents: prompt
       });
 
-      const text = response.text;
-      const jsonMatch = text.match(/\{[\s\S]*\}/);
-      if (jsonMatch) {
-        return JSON.parse(jsonMatch[0]);
+      const text = response && response.text;
+      if (text) {
+        // Validate and normalize schema
+        const validated = validateAndNormalizeItinerary(
+          text,
+          destinationName,
+          days,
+          budget,
+          destinationCoords
+        );
+        if (validated && validated.days && validated.days.length > 0) {
+          return validated;
+        }
       }
     } catch (err) {
-      console.warn("Gemini API itinerary generation fallback:", err);
+      console.warn("Gemini API itinerary generation error, using validated fallback generator:", err);
     }
   }
 
-  // Robust fallback itinerary generator
-  const generatedDays = [];
-  const themes = [
-    "Heritage Origins & Monument Exploration",
-    "Panoramic Viewpoints & Iconic Landmarks",
-    "Culinary Walk & Local Artisan Markets",
-    "Nature Sanctuary & Sunset Boat Cruise",
-    "Cultural Performances & Evening Festivities"
-  ];
-
-  for (let d = 1; d <= days; d++) {
-    generatedDays.push({
-      day: d,
-      theme: themes[(d - 1) % themes.length],
-      morning: `Morning guided exploration of top historic architecture and scenic spot in ${destinationName}.`,
-      afternoon: `Visit renowned cultural museum or local bazaar and enjoy authentic regional cuisine.`,
-      evening: `Sunset golden hour viewpoint followed by traditional dinner and evening cultural walk.`,
-      foodTip: `Sample local specialty dish and refreshing regional beverage.`,
-      budget: `₹${d * 1200 + 1500} ($${d * 20 + 35})`
-    });
-  }
-
-  return {
-    title: `${days}-Day ${destinationName} Curated Expedition`,
-    summary: `A ${pace} ${days}-day journey through ${destinationName} customized for a ${budget} traveler.`,
-    totalEstimatedCost: `₹${days * 3500} - ₹${days * 6000} ($${days * 45} - $${days * 80})`,
-    days: generatedDays
-  };
+  // Use rich, validated fallback generator
+  return validateAndNormalizeItinerary(
+    null,
+    destinationName,
+    days,
+    budget,
+    destinationCoords
+  );
 };

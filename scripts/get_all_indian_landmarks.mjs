@@ -18,7 +18,7 @@ const pages = [
 async function getWikiPageImage(page) {
   const url = `https://en.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(page)}`;
   return new Promise((resolve) => {
-    https.get(url, { headers: { 'User-Agent': 'YatraAI-Bot/1.0 (contact@yatraai.app)' } }, (res) => {
+    https.get(url, { headers: { 'User-Agent': 'GoYunetra-Bot/1.0 (contact@goyunetra.app)' } }, (res) => {
       let data = '';
       res.on('data', chunk => data += chunk);
       res.on('end', () => {

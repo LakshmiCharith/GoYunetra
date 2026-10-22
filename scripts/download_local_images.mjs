@@ -56,7 +56,7 @@ function download(item) {
     const file = fs.createWriteStream(dest);
     https.get(item.url, {
       headers: {
-        'User-Agent': 'YatraTravelApp/2.0 (contact@yatraai.app)'
+        'User-Agent': 'GoYunetraTravelApp/2.0 (contact@goyunetra.app)'
       }
     }, (res) => {
       if (res.statusCode === 200) {

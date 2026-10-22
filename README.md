@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🌍 YatraAI — India & Beyond
+# 🌍 GoYunetra — India & Beyond
 
 ### AI-Powered Travel Companion for 30+ Extraordinary Destinations
 
@@ -21,11 +21,11 @@
 
 ---
 
-## 📖 What is YatraAI?
+## 📖 What is GoYunetra?
 
-**YatraAI** is an AI-powered, single-page travel discovery platform that helps you explore **30+ extraordinary destinations** across India and the world — all in one beautifully designed interface.
+**GoYunetra** is an AI-powered, single-page travel discovery platform that helps you explore **30+ extraordinary destinations** across India and the world — all in one beautifully designed interface.
 
-Instead of jumping between dozens of travel websites, YatraAI gives you everything in one place:
+Instead of jumping between dozens of travel websites, GoYunetra gives you everything in one place:
 - 🗺️ A curated database of **15+ Indian wonders** + **15+ global icons**
 - 🌤️ **Live weather** at every destination via Open-Meteo API
 - 🤖 **Gemini AI chatbot** for instant travel advice and itinerary planning
@@ -65,10 +65,10 @@ Instead of jumping between dozens of travel websites, YatraAI gives you everythi
 
 ---
 
-### 🤖 YatraAI Chatbot
+### 🤖 GoYunetra Chatbot
 > Powered by Google Gemini 2.0 Flash — ask anything from "best food in Jaipur" to "7-day Kerala itinerary under ₹20,000".
 
-![YatraAI Chatbot](./screenshots/chatbot.jpg)
+![GoYunetra Chatbot](./screenshots/chatbot.jpg)
 
 ---
 
@@ -79,7 +79,7 @@ Instead of jumping between dozens of travel websites, YatraAI gives you everythi
 | 🏔️ **30+ Curated Destinations** | Handpicked Indian & global wonders with descriptions, photos, highlights & insider tips |
 | 🔍 **Smart Explorer** | Filter by continent, category, price level, and season — with real-time search |
 | 🌤️ **Live Weather** | Real-time conditions fetched from the free Open-Meteo API for each destination |
-| 🤖 **YatraAI Chatbot** | Google Gemini 2.0 Flash powers instant, context-aware travel Q&A |
+| 🤖 **GoYunetra Chatbot** | Google Gemini 2.0 Flash powers instant, context-aware travel Q&A |
 | 📅 **Itinerary Planner** | AI-generated day-by-day plan (1–14 days) with **PDF export** |
 | 💰 **Budget Calculator** | Trip cost estimator across Budget / Comfort / Luxury tiers for 5 regions |
 | 💱 **Currency Converter** | Real-time rates for INR · USD · EUR · GBP · JPY |
@@ -116,8 +116,8 @@ Instead of jumping between dozens of travel websites, YatraAI gives you everythi
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/LakshmiCharith/yatra-ai.git
-cd yatra-ai
+git clone https://github.com/LakshmiCharith/GoYunetra.git
+cd GoYunetra
 
 # 2. Install dependencies
 npm install
@@ -148,7 +148,7 @@ npm run build && npm run preview
 ## 📁 Project Structure
 
 ```
-yatra-ai/
+GoYunetra/
 ├── index.html                       # App entry, Google Fonts, meta tags
 ├── vite.config.js                   # Vite config
 ├── package.json                     # Dependencies & scripts
@@ -193,7 +193,7 @@ yatra-ai/
 | Resource | URL |
 |---|---|
 | **🚀 Live Application** | **[https://travel-app-peach-iota.vercel.app](https://travel-app-peach-iota.vercel.app)** |
-| **💻 GitHub Repository** | [github.com/LakshmiCharith/yatra-ai](https://github.com/LakshmiCharith/yatra-ai) |
+| **💻 GitHub Repository** | [github.com/LakshmiCharith/GoYunetra](https://github.com/LakshmiCharith/GoYunetra) |
 
 ---
 

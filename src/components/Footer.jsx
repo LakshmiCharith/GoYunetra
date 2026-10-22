@@ -31,7 +31,7 @@ export const Footer = () => {
               </div>
               <div>
                 <span style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: "1.3rem", fontWeight: "900", color: "var(--text-primary)", letterSpacing: "-0.03em" }}>
-                  Yatra<span style={{ background: "linear-gradient(90deg, #6366f1, #8b5cf6)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>AI</span>
+                  Go<span style={{ background: "linear-gradient(90deg, #6366f1, #8b5cf6)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>Yunetra</span>
                 </span>
                 <span style={{ display: "block", fontFamily: "'JetBrains Mono', monospace", fontSize: "0.55rem", color: "var(--text-muted)", letterSpacing: "0.12em", textTransform: "uppercase" }}>
                   TRAVEL COMPANION
@@ -90,7 +90,7 @@ export const Footer = () => {
           display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: "12px"
         }}>
           <span style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: "0.67rem", color: "var(--text-muted)", letterSpacing: "0.06em" }}>
-            © {year} YATRAAI // INDIA & WORLD TRAVEL APPLICATION
+            © {year} GOYUNETRA // INDIA & WORLD TRAVEL APPLICATION
           </span>
           <div style={{ display: "flex", alignItems: "center", gap: "6px", fontFamily: "'JetBrains Mono', monospace", fontSize: "0.67rem", color: "var(--text-muted)" }}>
             <span>CRAFTED WITH</span>

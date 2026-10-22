@@ -243,3 +243,28 @@ select option {
   to   { opacity: 1; transform: translateY(0); }
 }
 .animate-fade-in { animation: fadeIn 0.32s cubic-bezier(0.16, 1, 0.3, 1) forwards; }
+
+/* ── LEAFLET MAP CUSTOMIZATIONS ── */
+.leaflet-container {
+  font-family: 'DM Sans', system-ui, sans-serif !important;
+  z-index: 10 !important;
+}
+
+.leaflet-popup-content-wrapper {
+  background: rgba(255, 255, 255, 0.96) !important;
+  backdrop-filter: blur(12px) !important;
+  border-radius: 12px !important;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.35) !important;
+  padding: 6px !important;
+  border: 1px solid rgba(99, 102, 241, 0.25) !important;
+}
+
+.leaflet-popup-tip {
+  background: rgba(255, 255, 255, 0.96) !important;
+}
+
+.custom-leaflet-pin:hover {
+  transform: scale(1.18);
+  z-index: 1000 !important;
+}
+
